@@ -26,7 +26,7 @@ CREATE TABLE `sys_column_info` (
   `sys_db_info_id` int NOT NULL AUTO_INCREMENT,
   `table_name` varchar(100) NOT NULL,
   `column_name` varchar(100) NOT NULL,
-  `input_type` enum('textField','textArea','checkBox','select','button','textWoScan','json','date','dateTime','number','searchField','switchField','defferedSelect','text','slider') DEFAULT NULL,
+  `input_type` enum('textField','textArea','checkBox','select','button','textWoScan','json','date','dateTime','number','searchField','switchField','deferredSelect','text','slider') DEFAULT NULL,
   `is_readonly` tinyint DEFAULT NULL,
   `is_hidden` tinyint DEFAULT NULL,
   `is_required` tinyint DEFAULT NULL,

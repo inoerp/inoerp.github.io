@@ -1329,7 +1329,7 @@ SET @saved_cs_client     = @@character_set_client;
  1 AS `sourcing_rule_id`,
  1 AS `sales_ac_id`,
  1 AS `cogs_ac_id`,
- 1 AS `deffered_cogs_ac_id`,
+ 1 AS `deferred_cogs_ac_id`,
  1 AS `ip_tax_class`,
  1 AS `op_tax_class`,
  1 AS `ap_payment_term`,
@@ -2623,7 +2623,7 @@ SET @saved_cs_client     = @@character_set_client;
  1 AS `sourcing_rule_id`,
  1 AS `sales_ac_id`,
  1 AS `cogs_ac_id`,
- 1 AS `deffered_cogs_ac_id`,
+ 1 AS `deferred_cogs_ac_id`,
  1 AS `ip_tax_class`,
  1 AS `op_tax_class`,
  1 AS `ap_payment_term`,
@@ -4588,7 +4588,7 @@ SET @saved_cs_client     = @@character_set_client;
  1 AS `sourcing_rule_id`,
  1 AS `sales_ac_id`,
  1 AS `cogs_ac_id`,
- 1 AS `deffered_cogs_ac_id`,
+ 1 AS `deferred_cogs_ac_id`,
  1 AS `ip_tax_class`,
  1 AS `op_tax_class`,
  1 AS `ap_payment_term`,
@@ -6590,7 +6590,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `inv_item_v` AS select `inv`.`inventory_code` AS `vv_inventory_code`,`inv`.`vv_gl_ledger_id` AS `vv_gl_ledger_id`,`inv`.`vv_legal_org_name` AS `vv_legal_org_name`,`inv`.`vv_legal_org_code` AS `vv_legal_org_code`,`inv`.`mdm_legal_org_id` AS `mdm_legal_org_id`,`inv`.`business_org_code` AS `business_org_code`,`inv`.`allow_negative_balance_cb` AS `vv_org_allow_negative_balance_cb`,ifnull(`cic`.`standard_cost`,0) AS `unit_cost`,`item_status`.`code` AS `vv_item_status_code`,`iim`.`item_number` AS `vv_master_item_number`,`item`.`item_id` AS `item_id`,`item`.`inv_item_master_id` AS `inv_item_master_id`,`item`.`mdm_inventory_org_id` AS `mdm_inventory_org_id`,`item`.`item_number` AS `item_number`,`item`.`item_description` AS `item_description`,`item`.`image_file_id` AS `image_file_id`,`item`.`product_line` AS `product_line`,`item`.`product_line_percentage` AS `product_line_percentage`,`item`.`locator_control` AS `locator_control`,`item`.`allow_negative_balance_cb` AS `allow_negative_balance_cb`,`item`.`long_description` AS `long_description`,`item`.`uom_code` AS `uom_code`,`item`.`origination_type` AS `origination_type`,`item`.`origination_date` AS `origination_date`,`item`.`item_type` AS `item_type`,`item`.`item_status` AS `item_status`,`item`.`inventory_item_cb` AS `inventory_item_cb`,`item`.`stockable_cb` AS `stockable_cb`,`item`.`transactable_cb` AS `transactable_cb`,`item`.`reservable_cb` AS `reservable_cb`,`item`.`cycle_count_enabled_cb` AS `cycle_count_enabled_cb`,`item`.`kit_cb` AS `kit_cb`,`item`.`bom_enabled_cb` AS `bom_enabled_cb`,`item`.`bom_type` AS `bom_type`,`item`.`costing_enabled_cb` AS `costing_enabled_cb`,`item`.`inventory_asset_cb` AS `inventory_asset_cb`,`item`.`default_cost_group` AS `default_cost_group`,`item`.`material_ac_id` AS `material_ac_id`,`item`.`material_oh_ac_id` AS `material_oh_ac_id`,`item`.`overhead_ac_id` AS `overhead_ac_id`,`item`.`resource_ac_id` AS `resource_ac_id`,`item`.`osp_ac_id` AS `osp_ac_id`,`item`.`expense_ac_id` AS `expense_ac_id`,`item`.`lot_uniqueness` AS `lot_uniqueness`,`item`.`lot_control` AS `lot_control`,`item`.`lot_prefix` AS `lot_prefix`,`item`.`lot_starting_number` AS `lot_starting_number`,`item`.`serial_uniqueness` AS `serial_uniqueness`,`item`.`serial_control` AS `serial_control`,`item`.`serial_prefix` AS `serial_prefix`,`item`.`serial_starting_number` AS `serial_starting_number`,`item`.`purchased_cb` AS `purchased_cb`,`item`.`use_asl_cb` AS `use_asl_cb`,`item`.`invoice_matching` AS `invoice_matching`,`item`.`default_buyer` AS `default_buyer`,`item`.`list_price` AS `list_price`,`item`.`contract_item_type` AS `contract_item_type`,`item`.`duration_uom_id` AS `duration_uom_id`,`item`.`receipt_sub_inventory` AS `receipt_sub_inventory`,`item`.`over_receipt_percentage` AS `over_receipt_percentage`,`item`.`over_receipt_action` AS `over_receipt_action`,`item`.`receipt_days_early` AS `receipt_days_early`,`item`.`receipt_days_late` AS `receipt_days_late`,`item`.`receipt_day_action` AS `receipt_day_action`,`item`.`receipt_routing` AS `receipt_routing`,`item`.`weight_uom_id` AS `weight_uom_id`,`item`.`weight` AS `weight`,`item`.`volume_uom_id` AS `volume_uom_id`,`item`.`volume` AS `volume`,`item`.`dimension_uom_id` AS `dimension_uom_id`,`item`.`length` AS `length`,`item`.`width` AS `width`,`item`.`height` AS `height`,`item`.`equipment_cb` AS `equipment_cb`,`item`.`electronic_format_cb` AS `electronic_format_cb`,`item`.`planning_method` AS `planning_method`,`item`.`planner` AS `planner`,`item`.`make_buy` AS `make_buy`,`item`.`wip_supply_subinventory` AS `wip_supply_subinventory`,`item`.`wip_supply_locator` AS `wip_supply_locator`,`item`.`fix_order_quantity` AS `fix_order_quantity`,`item`.`saftey_stock_days` AS `saftey_stock_days`,`item`.`saftey_stock_percentage` AS `saftey_stock_percentage`,`item`.`saftey_stock_quantity` AS `saftey_stock_quantity`,`item`.`fix_days_supply` AS `fix_days_supply`,`item`.`fix_lot_multiplier` AS `fix_lot_multiplier`,`item`.`minimum_order_quantity` AS `minimum_order_quantity`,`item`.`maximum_order_quantity` AS `maximum_order_quantity`,`item`.`minmax_min_quantity` AS `minmax_min_quantity`,`item`.`minmax_max_quantity` AS `minmax_max_quantity`,`item`.`minmax_multibin_number` AS `minmax_multibin_number`,`item`.`minmax_multibin_size` AS `minmax_multibin_size`,`item`.`forecast_method` AS `forecast_method`,`item`.`forecast_control` AS `forecast_control`,`item`.`demand_timefence` AS `demand_timefence`,`item`.`planning_timefence` AS `planning_timefence`,`item`.`release_timefence` AS `release_timefence`,`item`.`pre_processing_lt` AS `pre_processing_lt`,`item`.`post_processing_lt` AS `post_processing_lt`,`item`.`processing_lt` AS `processing_lt`,`item`.`cumulative_mfg_lt` AS `cumulative_mfg_lt`,`item`.`cumulative_total_lt` AS `cumulative_total_lt`,`item`.`lt_lot_size` AS `lt_lot_size`,`item`.`build_in_wip_cb` AS `build_in_wip_cb`,`item`.`wip_supply_type` AS `wip_supply_type`,`item`.`customer_ordered_cb` AS `customer_ordered_cb`,`item`.`internal_ordered_cb` AS `internal_ordered_cb`,`item`.`shippable_cb` AS `shippable_cb`,`item`.`returnable_cb` AS `returnable_cb`,`item`.`invoiceable_cb` AS `invoiceable_cb`,`item`.`billing_type` AS `billing_type`,`item`.`service_request_cb` AS `service_request_cb`,`item`.`atp` AS `atp`,`item`.`picking_rule` AS `picking_rule`,`item`.`sourcing_rule_id` AS `sourcing_rule_id`,`item`.`sales_ac_id` AS `sales_ac_id`,`item`.`cogs_ac_id` AS `cogs_ac_id`,`item`.`deffered_cogs_ac_id` AS `deffered_cogs_ac_id`,`item`.`ip_tax_class` AS `ip_tax_class`,`item`.`op_tax_class` AS `op_tax_class`,`item`.`ap_payment_term` AS `ap_payment_term`,`item`.`ar_payment_term` AS `ar_payment_term`,`item`.`duration` AS `duration`,`item`.`rev_enabled_cb` AS `rev_enabled_cb`,`item`.`rounding_option` AS `rounding_option`,`item`.`onhand_with_rev_cb` AS `onhand_with_rev_cb`,`item`.`item_rev_number` AS `item_rev_number`,`item`.`am_asset_type` AS `am_asset_type`,`item`.`am_activity_cause` AS `am_activity_cause`,`item`.`am_activity_type` AS `am_activity_type`,`item`.`am_activity_source` AS `am_activity_source`,`item`.`discount_class` AS `discount_class`,`item`.`demand_class` AS `demand_class`,`item`.`costing_method` AS `costing_method`,`item`.`frozen_cost` AS `frozen_cost`,`item`.`created_by` AS `created_by`,`item`.`creation_date` AS `creation_date`,`item`.`last_updated_by` AS `last_updated_by`,`item`.`last_update_date` AS `last_update_date` from ((((`mdm_inventory_org_ev` `inv` join `inv_item` `item` on((`inv`.`mdm_inventory_org_id` = `item`.`mdm_inventory_org_id`))) join `inv_item_master` `iim` on((`iim`.`inv_item_master_id` = `item`.`inv_item_master_id`))) left join `inv_item_status` `item_status` on((`item`.`item_status` = `item_status`.`code`))) left join `cst_item_cost_v` `cic` on(((`cic`.`inv_item_master_id` = `item`.`inv_item_master_id`) and (`cic`.`vv_mdm_inventory_org_id` = `item`.`mdm_inventory_org_id`) and (`cic`.`cost_type` = 'FROZEN')))) */;
+/*!50001 VIEW `inv_item_v` AS select `inv`.`inventory_code` AS `vv_inventory_code`,`inv`.`vv_gl_ledger_id` AS `vv_gl_ledger_id`,`inv`.`vv_legal_org_name` AS `vv_legal_org_name`,`inv`.`vv_legal_org_code` AS `vv_legal_org_code`,`inv`.`mdm_legal_org_id` AS `mdm_legal_org_id`,`inv`.`business_org_code` AS `business_org_code`,`inv`.`allow_negative_balance_cb` AS `vv_org_allow_negative_balance_cb`,ifnull(`cic`.`standard_cost`,0) AS `unit_cost`,`item_status`.`code` AS `vv_item_status_code`,`iim`.`item_number` AS `vv_master_item_number`,`item`.`item_id` AS `item_id`,`item`.`inv_item_master_id` AS `inv_item_master_id`,`item`.`mdm_inventory_org_id` AS `mdm_inventory_org_id`,`item`.`item_number` AS `item_number`,`item`.`item_description` AS `item_description`,`item`.`image_file_id` AS `image_file_id`,`item`.`product_line` AS `product_line`,`item`.`product_line_percentage` AS `product_line_percentage`,`item`.`locator_control` AS `locator_control`,`item`.`allow_negative_balance_cb` AS `allow_negative_balance_cb`,`item`.`long_description` AS `long_description`,`item`.`uom_code` AS `uom_code`,`item`.`origination_type` AS `origination_type`,`item`.`origination_date` AS `origination_date`,`item`.`item_type` AS `item_type`,`item`.`item_status` AS `item_status`,`item`.`inventory_item_cb` AS `inventory_item_cb`,`item`.`stockable_cb` AS `stockable_cb`,`item`.`transactable_cb` AS `transactable_cb`,`item`.`reservable_cb` AS `reservable_cb`,`item`.`cycle_count_enabled_cb` AS `cycle_count_enabled_cb`,`item`.`kit_cb` AS `kit_cb`,`item`.`bom_enabled_cb` AS `bom_enabled_cb`,`item`.`bom_type` AS `bom_type`,`item`.`costing_enabled_cb` AS `costing_enabled_cb`,`item`.`inventory_asset_cb` AS `inventory_asset_cb`,`item`.`default_cost_group` AS `default_cost_group`,`item`.`material_ac_id` AS `material_ac_id`,`item`.`material_oh_ac_id` AS `material_oh_ac_id`,`item`.`overhead_ac_id` AS `overhead_ac_id`,`item`.`resource_ac_id` AS `resource_ac_id`,`item`.`osp_ac_id` AS `osp_ac_id`,`item`.`expense_ac_id` AS `expense_ac_id`,`item`.`lot_uniqueness` AS `lot_uniqueness`,`item`.`lot_control` AS `lot_control`,`item`.`lot_prefix` AS `lot_prefix`,`item`.`lot_starting_number` AS `lot_starting_number`,`item`.`serial_uniqueness` AS `serial_uniqueness`,`item`.`serial_control` AS `serial_control`,`item`.`serial_prefix` AS `serial_prefix`,`item`.`serial_starting_number` AS `serial_starting_number`,`item`.`purchased_cb` AS `purchased_cb`,`item`.`use_asl_cb` AS `use_asl_cb`,`item`.`invoice_matching` AS `invoice_matching`,`item`.`default_buyer` AS `default_buyer`,`item`.`list_price` AS `list_price`,`item`.`contract_item_type` AS `contract_item_type`,`item`.`duration_uom_id` AS `duration_uom_id`,`item`.`receipt_sub_inventory` AS `receipt_sub_inventory`,`item`.`over_receipt_percentage` AS `over_receipt_percentage`,`item`.`over_receipt_action` AS `over_receipt_action`,`item`.`receipt_days_early` AS `receipt_days_early`,`item`.`receipt_days_late` AS `receipt_days_late`,`item`.`receipt_day_action` AS `receipt_day_action`,`item`.`receipt_routing` AS `receipt_routing`,`item`.`weight_uom_id` AS `weight_uom_id`,`item`.`weight` AS `weight`,`item`.`volume_uom_id` AS `volume_uom_id`,`item`.`volume` AS `volume`,`item`.`dimension_uom_id` AS `dimension_uom_id`,`item`.`length` AS `length`,`item`.`width` AS `width`,`item`.`height` AS `height`,`item`.`equipment_cb` AS `equipment_cb`,`item`.`electronic_format_cb` AS `electronic_format_cb`,`item`.`planning_method` AS `planning_method`,`item`.`planner` AS `planner`,`item`.`make_buy` AS `make_buy`,`item`.`wip_supply_subinventory` AS `wip_supply_subinventory`,`item`.`wip_supply_locator` AS `wip_supply_locator`,`item`.`fix_order_quantity` AS `fix_order_quantity`,`item`.`saftey_stock_days` AS `saftey_stock_days`,`item`.`saftey_stock_percentage` AS `saftey_stock_percentage`,`item`.`saftey_stock_quantity` AS `saftey_stock_quantity`,`item`.`fix_days_supply` AS `fix_days_supply`,`item`.`fix_lot_multiplier` AS `fix_lot_multiplier`,`item`.`minimum_order_quantity` AS `minimum_order_quantity`,`item`.`maximum_order_quantity` AS `maximum_order_quantity`,`item`.`minmax_min_quantity` AS `minmax_min_quantity`,`item`.`minmax_max_quantity` AS `minmax_max_quantity`,`item`.`minmax_multibin_number` AS `minmax_multibin_number`,`item`.`minmax_multibin_size` AS `minmax_multibin_size`,`item`.`forecast_method` AS `forecast_method`,`item`.`forecast_control` AS `forecast_control`,`item`.`demand_timefence` AS `demand_timefence`,`item`.`planning_timefence` AS `planning_timefence`,`item`.`release_timefence` AS `release_timefence`,`item`.`pre_processing_lt` AS `pre_processing_lt`,`item`.`post_processing_lt` AS `post_processing_lt`,`item`.`processing_lt` AS `processing_lt`,`item`.`cumulative_mfg_lt` AS `cumulative_mfg_lt`,`item`.`cumulative_total_lt` AS `cumulative_total_lt`,`item`.`lt_lot_size` AS `lt_lot_size`,`item`.`build_in_wip_cb` AS `build_in_wip_cb`,`item`.`wip_supply_type` AS `wip_supply_type`,`item`.`customer_ordered_cb` AS `customer_ordered_cb`,`item`.`internal_ordered_cb` AS `internal_ordered_cb`,`item`.`shippable_cb` AS `shippable_cb`,`item`.`returnable_cb` AS `returnable_cb`,`item`.`invoiceable_cb` AS `invoiceable_cb`,`item`.`billing_type` AS `billing_type`,`item`.`service_request_cb` AS `service_request_cb`,`item`.`atp` AS `atp`,`item`.`picking_rule` AS `picking_rule`,`item`.`sourcing_rule_id` AS `sourcing_rule_id`,`item`.`sales_ac_id` AS `sales_ac_id`,`item`.`cogs_ac_id` AS `cogs_ac_id`,`item`.`deferred_cogs_ac_id` AS `deferred_cogs_ac_id`,`item`.`ip_tax_class` AS `ip_tax_class`,`item`.`op_tax_class` AS `op_tax_class`,`item`.`ap_payment_term` AS `ap_payment_term`,`item`.`ar_payment_term` AS `ar_payment_term`,`item`.`duration` AS `duration`,`item`.`rev_enabled_cb` AS `rev_enabled_cb`,`item`.`rounding_option` AS `rounding_option`,`item`.`onhand_with_rev_cb` AS `onhand_with_rev_cb`,`item`.`item_rev_number` AS `item_rev_number`,`item`.`am_asset_type` AS `am_asset_type`,`item`.`am_activity_cause` AS `am_activity_cause`,`item`.`am_activity_type` AS `am_activity_type`,`item`.`am_activity_source` AS `am_activity_source`,`item`.`discount_class` AS `discount_class`,`item`.`demand_class` AS `demand_class`,`item`.`costing_method` AS `costing_method`,`item`.`frozen_cost` AS `frozen_cost`,`item`.`created_by` AS `created_by`,`item`.`creation_date` AS `creation_date`,`item`.`last_updated_by` AS `last_updated_by`,`item`.`last_update_date` AS `last_update_date` from ((((`mdm_inventory_org_ev` `inv` join `inv_item` `item` on((`inv`.`mdm_inventory_org_id` = `item`.`mdm_inventory_org_id`))) join `inv_item_master` `iim` on((`iim`.`inv_item_master_id` = `item`.`inv_item_master_id`))) left join `inv_item_status` `item_status` on((`item`.`item_status` = `item_status`.`code`))) left join `cst_item_cost_v` `cic` on(((`cic`.`inv_item_master_id` = `item`.`inv_item_master_id`) and (`cic`.`vv_mdm_inventory_org_id` = `item`.`mdm_inventory_org_id`) and (`cic`.`cost_type` = 'FROZEN')))) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -7166,7 +7166,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `inv_item_master_ev` AS select NULL AS `vv_assign_to_org`,NULL AS `vv_assign_to_org_id`,`iim`.`inv_item_master_id` AS `inv_item_master_id`,`iim`.`item_number` AS `item_number`,`iim`.`item_description` AS `item_description`,`iim`.`image_file_id` AS `image_file_id`,`iim`.`product_line` AS `product_line`,`iim`.`product_line_percentage` AS `product_line_percentage`,`iim`.`locator_control` AS `locator_control`,`iim`.`allow_negative_balance_cb` AS `allow_negative_balance_cb`,`iim`.`long_description` AS `long_description`,`iim`.`uom_code` AS `uom_code`,`iim`.`origination_type` AS `origination_type`,`iim`.`origination_date` AS `origination_date`,`iim`.`item_type` AS `item_type`,`iim`.`item_status` AS `item_status`,`iim`.`inventory_item_cb` AS `inventory_item_cb`,`iim`.`stockable_cb` AS `stockable_cb`,`iim`.`transactable_cb` AS `transactable_cb`,`iim`.`reservable_cb` AS `reservable_cb`,`iim`.`cycle_count_enabled_cb` AS `cycle_count_enabled_cb`,`iim`.`kit_cb` AS `kit_cb`,`iim`.`bom_enabled_cb` AS `bom_enabled_cb`,`iim`.`bom_type` AS `bom_type`,`iim`.`costing_enabled_cb` AS `costing_enabled_cb`,`iim`.`inventory_asset_cb` AS `inventory_asset_cb`,`iim`.`default_cost_group` AS `default_cost_group`,`iim`.`material_ac_id` AS `material_ac_id`,`iim`.`material_oh_ac_id` AS `material_oh_ac_id`,`iim`.`overhead_ac_id` AS `overhead_ac_id`,`iim`.`resource_ac_id` AS `resource_ac_id`,`iim`.`osp_ac_id` AS `osp_ac_id`,`iim`.`expense_ac_id` AS `expense_ac_id`,`iim`.`lot_uniqueness` AS `lot_uniqueness`,`iim`.`lot_control` AS `lot_control`,`iim`.`lot_prefix` AS `lot_prefix`,`iim`.`lot_starting_number` AS `lot_starting_number`,`iim`.`serial_uniqueness` AS `serial_uniqueness`,`iim`.`serial_control` AS `serial_control`,`iim`.`serial_prefix` AS `serial_prefix`,`iim`.`serial_starting_number` AS `serial_starting_number`,`iim`.`purchased_cb` AS `purchased_cb`,`iim`.`use_asl_cb` AS `use_asl_cb`,`iim`.`invoice_matching` AS `invoice_matching`,`iim`.`default_buyer` AS `default_buyer`,`iim`.`list_price` AS `list_price`,`iim`.`contract_item_type` AS `contract_item_type`,`iim`.`duration_uom_id` AS `duration_uom_id`,`iim`.`receipt_sub_inventory` AS `receipt_sub_inventory`,`iim`.`over_receipt_percentage` AS `over_receipt_percentage`,`iim`.`over_receipt_action` AS `over_receipt_action`,`iim`.`receipt_days_early` AS `receipt_days_early`,`iim`.`receipt_days_late` AS `receipt_days_late`,`iim`.`receipt_day_action` AS `receipt_day_action`,`iim`.`receipt_routing` AS `receipt_routing`,`iim`.`weight_uom_id` AS `weight_uom_id`,`iim`.`weight` AS `weight`,`iim`.`volume_uom_id` AS `volume_uom_id`,`iim`.`volume` AS `volume`,`iim`.`dimension_uom_id` AS `dimension_uom_id`,`iim`.`length` AS `length`,`iim`.`width` AS `width`,`iim`.`height` AS `height`,`iim`.`equipment_cb` AS `equipment_cb`,`iim`.`electronic_format_cb` AS `electronic_format_cb`,`iim`.`planning_method` AS `planning_method`,`iim`.`planner` AS `planner`,`iim`.`make_buy` AS `make_buy`,`iim`.`wip_supply_subinventory` AS `wip_supply_subinventory`,`iim`.`wip_supply_locator` AS `wip_supply_locator`,`iim`.`fix_order_quantity` AS `fix_order_quantity`,`iim`.`saftey_stock_days` AS `saftey_stock_days`,`iim`.`saftey_stock_percentage` AS `saftey_stock_percentage`,`iim`.`saftey_stock_quantity` AS `saftey_stock_quantity`,`iim`.`fix_days_supply` AS `fix_days_supply`,`iim`.`fix_lot_multiplier` AS `fix_lot_multiplier`,`iim`.`minimum_order_quantity` AS `minimum_order_quantity`,`iim`.`maximum_order_quantity` AS `maximum_order_quantity`,`iim`.`minmax_min_quantity` AS `minmax_min_quantity`,`iim`.`minmax_max_quantity` AS `minmax_max_quantity`,`iim`.`minmax_multibin_number` AS `minmax_multibin_number`,`iim`.`minmax_multibin_size` AS `minmax_multibin_size`,`iim`.`forecast_method` AS `forecast_method`,`iim`.`forecast_control` AS `forecast_control`,`iim`.`demand_timefence` AS `demand_timefence`,`iim`.`planning_timefence` AS `planning_timefence`,`iim`.`release_timefence` AS `release_timefence`,`iim`.`pre_processing_lt` AS `pre_processing_lt`,`iim`.`post_processing_lt` AS `post_processing_lt`,`iim`.`processing_lt` AS `processing_lt`,`iim`.`cumulative_mfg_lt` AS `cumulative_mfg_lt`,`iim`.`cumulative_total_lt` AS `cumulative_total_lt`,`iim`.`lt_lot_size` AS `lt_lot_size`,`iim`.`build_in_wip_cb` AS `build_in_wip_cb`,`iim`.`wip_supply_type` AS `wip_supply_type`,`iim`.`customer_ordered_cb` AS `customer_ordered_cb`,`iim`.`internal_ordered_cb` AS `internal_ordered_cb`,`iim`.`shippable_cb` AS `shippable_cb`,`iim`.`returnable_cb` AS `returnable_cb`,`iim`.`invoiceable_cb` AS `invoiceable_cb`,`iim`.`billing_type` AS `billing_type`,`iim`.`service_request_cb` AS `service_request_cb`,`iim`.`atp` AS `atp`,`iim`.`picking_rule` AS `picking_rule`,`iim`.`sourcing_rule_id` AS `sourcing_rule_id`,`iim`.`sales_ac_id` AS `sales_ac_id`,`iim`.`cogs_ac_id` AS `cogs_ac_id`,`iim`.`deffered_cogs_ac_id` AS `deffered_cogs_ac_id`,`iim`.`ip_tax_class` AS `ip_tax_class`,`iim`.`op_tax_class` AS `op_tax_class`,`iim`.`ap_payment_term` AS `ap_payment_term`,`iim`.`ar_payment_term` AS `ar_payment_term`,`iim`.`duration` AS `duration`,`iim`.`rev_enabled_cb` AS `rev_enabled_cb`,`iim`.`rounding_option` AS `rounding_option`,`iim`.`onhand_with_rev_cb` AS `onhand_with_rev_cb`,`iim`.`item_rev_number` AS `item_rev_number`,`iim`.`am_asset_type` AS `am_asset_type`,`iim`.`am_activity_cause` AS `am_activity_cause`,`iim`.`am_activity_type` AS `am_activity_type`,`iim`.`am_activity_source` AS `am_activity_source`,`iim`.`discount_class` AS `discount_class`,`iim`.`demand_class` AS `demand_class`,`iim`.`created_by` AS `created_by`,`iim`.`creation_date` AS `creation_date`,`iim`.`last_updated_by` AS `last_updated_by`,`iim`.`last_update_date` AS `last_update_date` from `inv_item_master` `iim` */;
+/*!50001 VIEW `inv_item_master_ev` AS select NULL AS `vv_assign_to_org`,NULL AS `vv_assign_to_org_id`,`iim`.`inv_item_master_id` AS `inv_item_master_id`,`iim`.`item_number` AS `item_number`,`iim`.`item_description` AS `item_description`,`iim`.`image_file_id` AS `image_file_id`,`iim`.`product_line` AS `product_line`,`iim`.`product_line_percentage` AS `product_line_percentage`,`iim`.`locator_control` AS `locator_control`,`iim`.`allow_negative_balance_cb` AS `allow_negative_balance_cb`,`iim`.`long_description` AS `long_description`,`iim`.`uom_code` AS `uom_code`,`iim`.`origination_type` AS `origination_type`,`iim`.`origination_date` AS `origination_date`,`iim`.`item_type` AS `item_type`,`iim`.`item_status` AS `item_status`,`iim`.`inventory_item_cb` AS `inventory_item_cb`,`iim`.`stockable_cb` AS `stockable_cb`,`iim`.`transactable_cb` AS `transactable_cb`,`iim`.`reservable_cb` AS `reservable_cb`,`iim`.`cycle_count_enabled_cb` AS `cycle_count_enabled_cb`,`iim`.`kit_cb` AS `kit_cb`,`iim`.`bom_enabled_cb` AS `bom_enabled_cb`,`iim`.`bom_type` AS `bom_type`,`iim`.`costing_enabled_cb` AS `costing_enabled_cb`,`iim`.`inventory_asset_cb` AS `inventory_asset_cb`,`iim`.`default_cost_group` AS `default_cost_group`,`iim`.`material_ac_id` AS `material_ac_id`,`iim`.`material_oh_ac_id` AS `material_oh_ac_id`,`iim`.`overhead_ac_id` AS `overhead_ac_id`,`iim`.`resource_ac_id` AS `resource_ac_id`,`iim`.`osp_ac_id` AS `osp_ac_id`,`iim`.`expense_ac_id` AS `expense_ac_id`,`iim`.`lot_uniqueness` AS `lot_uniqueness`,`iim`.`lot_control` AS `lot_control`,`iim`.`lot_prefix` AS `lot_prefix`,`iim`.`lot_starting_number` AS `lot_starting_number`,`iim`.`serial_uniqueness` AS `serial_uniqueness`,`iim`.`serial_control` AS `serial_control`,`iim`.`serial_prefix` AS `serial_prefix`,`iim`.`serial_starting_number` AS `serial_starting_number`,`iim`.`purchased_cb` AS `purchased_cb`,`iim`.`use_asl_cb` AS `use_asl_cb`,`iim`.`invoice_matching` AS `invoice_matching`,`iim`.`default_buyer` AS `default_buyer`,`iim`.`list_price` AS `list_price`,`iim`.`contract_item_type` AS `contract_item_type`,`iim`.`duration_uom_id` AS `duration_uom_id`,`iim`.`receipt_sub_inventory` AS `receipt_sub_inventory`,`iim`.`over_receipt_percentage` AS `over_receipt_percentage`,`iim`.`over_receipt_action` AS `over_receipt_action`,`iim`.`receipt_days_early` AS `receipt_days_early`,`iim`.`receipt_days_late` AS `receipt_days_late`,`iim`.`receipt_day_action` AS `receipt_day_action`,`iim`.`receipt_routing` AS `receipt_routing`,`iim`.`weight_uom_id` AS `weight_uom_id`,`iim`.`weight` AS `weight`,`iim`.`volume_uom_id` AS `volume_uom_id`,`iim`.`volume` AS `volume`,`iim`.`dimension_uom_id` AS `dimension_uom_id`,`iim`.`length` AS `length`,`iim`.`width` AS `width`,`iim`.`height` AS `height`,`iim`.`equipment_cb` AS `equipment_cb`,`iim`.`electronic_format_cb` AS `electronic_format_cb`,`iim`.`planning_method` AS `planning_method`,`iim`.`planner` AS `planner`,`iim`.`make_buy` AS `make_buy`,`iim`.`wip_supply_subinventory` AS `wip_supply_subinventory`,`iim`.`wip_supply_locator` AS `wip_supply_locator`,`iim`.`fix_order_quantity` AS `fix_order_quantity`,`iim`.`saftey_stock_days` AS `saftey_stock_days`,`iim`.`saftey_stock_percentage` AS `saftey_stock_percentage`,`iim`.`saftey_stock_quantity` AS `saftey_stock_quantity`,`iim`.`fix_days_supply` AS `fix_days_supply`,`iim`.`fix_lot_multiplier` AS `fix_lot_multiplier`,`iim`.`minimum_order_quantity` AS `minimum_order_quantity`,`iim`.`maximum_order_quantity` AS `maximum_order_quantity`,`iim`.`minmax_min_quantity` AS `minmax_min_quantity`,`iim`.`minmax_max_quantity` AS `minmax_max_quantity`,`iim`.`minmax_multibin_number` AS `minmax_multibin_number`,`iim`.`minmax_multibin_size` AS `minmax_multibin_size`,`iim`.`forecast_method` AS `forecast_method`,`iim`.`forecast_control` AS `forecast_control`,`iim`.`demand_timefence` AS `demand_timefence`,`iim`.`planning_timefence` AS `planning_timefence`,`iim`.`release_timefence` AS `release_timefence`,`iim`.`pre_processing_lt` AS `pre_processing_lt`,`iim`.`post_processing_lt` AS `post_processing_lt`,`iim`.`processing_lt` AS `processing_lt`,`iim`.`cumulative_mfg_lt` AS `cumulative_mfg_lt`,`iim`.`cumulative_total_lt` AS `cumulative_total_lt`,`iim`.`lt_lot_size` AS `lt_lot_size`,`iim`.`build_in_wip_cb` AS `build_in_wip_cb`,`iim`.`wip_supply_type` AS `wip_supply_type`,`iim`.`customer_ordered_cb` AS `customer_ordered_cb`,`iim`.`internal_ordered_cb` AS `internal_ordered_cb`,`iim`.`shippable_cb` AS `shippable_cb`,`iim`.`returnable_cb` AS `returnable_cb`,`iim`.`invoiceable_cb` AS `invoiceable_cb`,`iim`.`billing_type` AS `billing_type`,`iim`.`service_request_cb` AS `service_request_cb`,`iim`.`atp` AS `atp`,`iim`.`picking_rule` AS `picking_rule`,`iim`.`sourcing_rule_id` AS `sourcing_rule_id`,`iim`.`sales_ac_id` AS `sales_ac_id`,`iim`.`cogs_ac_id` AS `cogs_ac_id`,`iim`.`deferred_cogs_ac_id` AS `deferred_cogs_ac_id`,`iim`.`ip_tax_class` AS `ip_tax_class`,`iim`.`op_tax_class` AS `op_tax_class`,`iim`.`ap_payment_term` AS `ap_payment_term`,`iim`.`ar_payment_term` AS `ar_payment_term`,`iim`.`duration` AS `duration`,`iim`.`rev_enabled_cb` AS `rev_enabled_cb`,`iim`.`rounding_option` AS `rounding_option`,`iim`.`onhand_with_rev_cb` AS `onhand_with_rev_cb`,`iim`.`item_rev_number` AS `item_rev_number`,`iim`.`am_asset_type` AS `am_asset_type`,`iim`.`am_activity_cause` AS `am_activity_cause`,`iim`.`am_activity_type` AS `am_activity_type`,`iim`.`am_activity_source` AS `am_activity_source`,`iim`.`discount_class` AS `discount_class`,`iim`.`demand_class` AS `demand_class`,`iim`.`created_by` AS `created_by`,`iim`.`creation_date` AS `creation_date`,`iim`.`last_updated_by` AS `last_updated_by`,`iim`.`last_update_date` AS `last_update_date` from `inv_item_master` `iim` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -8030,7 +8030,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `inv_item_ev` AS select NULL AS `vv_assign_to_org`,NULL AS `vv_assign_to_org_id`,`org`.`inventory_code` AS `vv_inv_org_code`,`iim`.`item_number` AS `vv_item_number`,`gaph`.`profile_code` AS `vv_profile_code`,`item`.`item_id` AS `item_id`,`item`.`inv_item_master_id` AS `inv_item_master_id`,`item`.`mdm_inventory_org_id` AS `mdm_inventory_org_id`,`item`.`item_number` AS `item_number`,`item`.`item_description` AS `item_description`,`item`.`image_file_id` AS `image_file_id`,`item`.`product_line` AS `product_line`,`item`.`product_line_percentage` AS `product_line_percentage`,`item`.`locator_control` AS `locator_control`,`item`.`allow_negative_balance_cb` AS `allow_negative_balance_cb`,`item`.`long_description` AS `long_description`,`item`.`uom_code` AS `uom_code`,`item`.`origination_type` AS `origination_type`,`item`.`origination_date` AS `origination_date`,`item`.`item_type` AS `item_type`,`item`.`item_status` AS `item_status`,`item`.`inventory_item_cb` AS `inventory_item_cb`,`item`.`stockable_cb` AS `stockable_cb`,`item`.`transactable_cb` AS `transactable_cb`,`item`.`reservable_cb` AS `reservable_cb`,`item`.`cycle_count_enabled_cb` AS `cycle_count_enabled_cb`,`item`.`kit_cb` AS `kit_cb`,`item`.`bom_enabled_cb` AS `bom_enabled_cb`,`item`.`bom_type` AS `bom_type`,`item`.`costing_enabled_cb` AS `costing_enabled_cb`,`item`.`inventory_asset_cb` AS `inventory_asset_cb`,`item`.`default_cost_group` AS `default_cost_group`,`item`.`material_ac_id` AS `material_ac_id`,`item`.`material_oh_ac_id` AS `material_oh_ac_id`,`item`.`overhead_ac_id` AS `overhead_ac_id`,`item`.`resource_ac_id` AS `resource_ac_id`,`item`.`osp_ac_id` AS `osp_ac_id`,`item`.`expense_ac_id` AS `expense_ac_id`,`item`.`lot_uniqueness` AS `lot_uniqueness`,`item`.`lot_control` AS `lot_control`,`item`.`lot_prefix` AS `lot_prefix`,`item`.`lot_starting_number` AS `lot_starting_number`,`item`.`serial_uniqueness` AS `serial_uniqueness`,`item`.`serial_control` AS `serial_control`,`item`.`serial_prefix` AS `serial_prefix`,`item`.`serial_starting_number` AS `serial_starting_number`,`item`.`purchased_cb` AS `purchased_cb`,`item`.`use_asl_cb` AS `use_asl_cb`,`item`.`invoice_matching` AS `invoice_matching`,`item`.`default_buyer` AS `default_buyer`,`item`.`list_price` AS `list_price`,`item`.`contract_item_type` AS `contract_item_type`,`item`.`duration_uom_id` AS `duration_uom_id`,`item`.`receipt_sub_inventory` AS `receipt_sub_inventory`,`item`.`over_receipt_percentage` AS `over_receipt_percentage`,`item`.`over_receipt_action` AS `over_receipt_action`,`item`.`receipt_days_early` AS `receipt_days_early`,`item`.`receipt_days_late` AS `receipt_days_late`,`item`.`receipt_day_action` AS `receipt_day_action`,`item`.`receipt_routing` AS `receipt_routing`,`item`.`weight_uom_id` AS `weight_uom_id`,`item`.`weight` AS `weight`,`item`.`volume_uom_id` AS `volume_uom_id`,`item`.`volume` AS `volume`,`item`.`dimension_uom_id` AS `dimension_uom_id`,`item`.`length` AS `length`,`item`.`width` AS `width`,`item`.`height` AS `height`,`item`.`equipment_cb` AS `equipment_cb`,`item`.`electronic_format_cb` AS `electronic_format_cb`,`item`.`planning_method` AS `planning_method`,`item`.`planner` AS `planner`,`item`.`make_buy` AS `make_buy`,`item`.`wip_supply_subinventory` AS `wip_supply_subinventory`,`item`.`wip_supply_locator` AS `wip_supply_locator`,`item`.`fix_order_quantity` AS `fix_order_quantity`,`item`.`saftey_stock_days` AS `saftey_stock_days`,`item`.`saftey_stock_percentage` AS `saftey_stock_percentage`,`item`.`saftey_stock_quantity` AS `saftey_stock_quantity`,`item`.`fix_days_supply` AS `fix_days_supply`,`item`.`fix_lot_multiplier` AS `fix_lot_multiplier`,`item`.`minimum_order_quantity` AS `minimum_order_quantity`,`item`.`maximum_order_quantity` AS `maximum_order_quantity`,`item`.`minmax_min_quantity` AS `minmax_min_quantity`,`item`.`minmax_max_quantity` AS `minmax_max_quantity`,`item`.`minmax_multibin_number` AS `minmax_multibin_number`,`item`.`minmax_multibin_size` AS `minmax_multibin_size`,`item`.`forecast_method` AS `forecast_method`,`item`.`forecast_control` AS `forecast_control`,`item`.`demand_timefence` AS `demand_timefence`,`item`.`planning_timefence` AS `planning_timefence`,`item`.`release_timefence` AS `release_timefence`,`item`.`pre_processing_lt` AS `pre_processing_lt`,`item`.`post_processing_lt` AS `post_processing_lt`,`item`.`processing_lt` AS `processing_lt`,`item`.`cumulative_mfg_lt` AS `cumulative_mfg_lt`,`item`.`cumulative_total_lt` AS `cumulative_total_lt`,`item`.`lt_lot_size` AS `lt_lot_size`,`item`.`build_in_wip_cb` AS `build_in_wip_cb`,`item`.`wip_supply_type` AS `wip_supply_type`,`item`.`customer_ordered_cb` AS `customer_ordered_cb`,`item`.`internal_ordered_cb` AS `internal_ordered_cb`,`item`.`shippable_cb` AS `shippable_cb`,`item`.`returnable_cb` AS `returnable_cb`,`item`.`invoiceable_cb` AS `invoiceable_cb`,`item`.`billing_type` AS `billing_type`,`item`.`service_request_cb` AS `service_request_cb`,`item`.`atp` AS `atp`,`item`.`picking_rule` AS `picking_rule`,`item`.`sourcing_rule_id` AS `sourcing_rule_id`,`item`.`sales_ac_id` AS `sales_ac_id`,`item`.`cogs_ac_id` AS `cogs_ac_id`,`item`.`deffered_cogs_ac_id` AS `deffered_cogs_ac_id`,`item`.`ip_tax_class` AS `ip_tax_class`,`item`.`op_tax_class` AS `op_tax_class`,`item`.`ap_payment_term` AS `ap_payment_term`,`item`.`ar_payment_term` AS `ar_payment_term`,`item`.`duration` AS `duration`,`item`.`rev_enabled_cb` AS `rev_enabled_cb`,`item`.`rounding_option` AS `rounding_option`,`item`.`onhand_with_rev_cb` AS `onhand_with_rev_cb`,`item`.`item_rev_number` AS `item_rev_number`,`item`.`am_asset_type` AS `am_asset_type`,`item`.`am_activity_cause` AS `am_activity_cause`,`item`.`am_activity_type` AS `am_activity_type`,`item`.`am_activity_source` AS `am_activity_source`,`item`.`discount_class` AS `discount_class`,`item`.`demand_class` AS `demand_class`,`item`.`costing_method` AS `costing_method`,`item`.`frozen_cost` AS `frozen_cost`,`item`.`created_by` AS `created_by`,`item`.`creation_date` AS `creation_date`,`item`.`last_updated_by` AS `last_updated_by`,`item`.`last_update_date` AS `last_update_date` from (((`inv_item` `item` left join `gl_ac_profile_header` `gaph` on((`gaph`.`gl_ac_profile_header_id` = `item`.`gl_ac_profile_header_id`))) join `inv_item_master` `iim` on((`iim`.`inv_item_master_id` = `item`.`inv_item_master_id`))) join `mdm_inventory_org` `org` on((`org`.`mdm_inventory_org_id` = `item`.`mdm_inventory_org_id`))) */;
+/*!50001 VIEW `inv_item_ev` AS select NULL AS `vv_assign_to_org`,NULL AS `vv_assign_to_org_id`,`org`.`inventory_code` AS `vv_inv_org_code`,`iim`.`item_number` AS `vv_item_number`,`gaph`.`profile_code` AS `vv_profile_code`,`item`.`item_id` AS `item_id`,`item`.`inv_item_master_id` AS `inv_item_master_id`,`item`.`mdm_inventory_org_id` AS `mdm_inventory_org_id`,`item`.`item_number` AS `item_number`,`item`.`item_description` AS `item_description`,`item`.`image_file_id` AS `image_file_id`,`item`.`product_line` AS `product_line`,`item`.`product_line_percentage` AS `product_line_percentage`,`item`.`locator_control` AS `locator_control`,`item`.`allow_negative_balance_cb` AS `allow_negative_balance_cb`,`item`.`long_description` AS `long_description`,`item`.`uom_code` AS `uom_code`,`item`.`origination_type` AS `origination_type`,`item`.`origination_date` AS `origination_date`,`item`.`item_type` AS `item_type`,`item`.`item_status` AS `item_status`,`item`.`inventory_item_cb` AS `inventory_item_cb`,`item`.`stockable_cb` AS `stockable_cb`,`item`.`transactable_cb` AS `transactable_cb`,`item`.`reservable_cb` AS `reservable_cb`,`item`.`cycle_count_enabled_cb` AS `cycle_count_enabled_cb`,`item`.`kit_cb` AS `kit_cb`,`item`.`bom_enabled_cb` AS `bom_enabled_cb`,`item`.`bom_type` AS `bom_type`,`item`.`costing_enabled_cb` AS `costing_enabled_cb`,`item`.`inventory_asset_cb` AS `inventory_asset_cb`,`item`.`default_cost_group` AS `default_cost_group`,`item`.`material_ac_id` AS `material_ac_id`,`item`.`material_oh_ac_id` AS `material_oh_ac_id`,`item`.`overhead_ac_id` AS `overhead_ac_id`,`item`.`resource_ac_id` AS `resource_ac_id`,`item`.`osp_ac_id` AS `osp_ac_id`,`item`.`expense_ac_id` AS `expense_ac_id`,`item`.`lot_uniqueness` AS `lot_uniqueness`,`item`.`lot_control` AS `lot_control`,`item`.`lot_prefix` AS `lot_prefix`,`item`.`lot_starting_number` AS `lot_starting_number`,`item`.`serial_uniqueness` AS `serial_uniqueness`,`item`.`serial_control` AS `serial_control`,`item`.`serial_prefix` AS `serial_prefix`,`item`.`serial_starting_number` AS `serial_starting_number`,`item`.`purchased_cb` AS `purchased_cb`,`item`.`use_asl_cb` AS `use_asl_cb`,`item`.`invoice_matching` AS `invoice_matching`,`item`.`default_buyer` AS `default_buyer`,`item`.`list_price` AS `list_price`,`item`.`contract_item_type` AS `contract_item_type`,`item`.`duration_uom_id` AS `duration_uom_id`,`item`.`receipt_sub_inventory` AS `receipt_sub_inventory`,`item`.`over_receipt_percentage` AS `over_receipt_percentage`,`item`.`over_receipt_action` AS `over_receipt_action`,`item`.`receipt_days_early` AS `receipt_days_early`,`item`.`receipt_days_late` AS `receipt_days_late`,`item`.`receipt_day_action` AS `receipt_day_action`,`item`.`receipt_routing` AS `receipt_routing`,`item`.`weight_uom_id` AS `weight_uom_id`,`item`.`weight` AS `weight`,`item`.`volume_uom_id` AS `volume_uom_id`,`item`.`volume` AS `volume`,`item`.`dimension_uom_id` AS `dimension_uom_id`,`item`.`length` AS `length`,`item`.`width` AS `width`,`item`.`height` AS `height`,`item`.`equipment_cb` AS `equipment_cb`,`item`.`electronic_format_cb` AS `electronic_format_cb`,`item`.`planning_method` AS `planning_method`,`item`.`planner` AS `planner`,`item`.`make_buy` AS `make_buy`,`item`.`wip_supply_subinventory` AS `wip_supply_subinventory`,`item`.`wip_supply_locator` AS `wip_supply_locator`,`item`.`fix_order_quantity` AS `fix_order_quantity`,`item`.`saftey_stock_days` AS `saftey_stock_days`,`item`.`saftey_stock_percentage` AS `saftey_stock_percentage`,`item`.`saftey_stock_quantity` AS `saftey_stock_quantity`,`item`.`fix_days_supply` AS `fix_days_supply`,`item`.`fix_lot_multiplier` AS `fix_lot_multiplier`,`item`.`minimum_order_quantity` AS `minimum_order_quantity`,`item`.`maximum_order_quantity` AS `maximum_order_quantity`,`item`.`minmax_min_quantity` AS `minmax_min_quantity`,`item`.`minmax_max_quantity` AS `minmax_max_quantity`,`item`.`minmax_multibin_number` AS `minmax_multibin_number`,`item`.`minmax_multibin_size` AS `minmax_multibin_size`,`item`.`forecast_method` AS `forecast_method`,`item`.`forecast_control` AS `forecast_control`,`item`.`demand_timefence` AS `demand_timefence`,`item`.`planning_timefence` AS `planning_timefence`,`item`.`release_timefence` AS `release_timefence`,`item`.`pre_processing_lt` AS `pre_processing_lt`,`item`.`post_processing_lt` AS `post_processing_lt`,`item`.`processing_lt` AS `processing_lt`,`item`.`cumulative_mfg_lt` AS `cumulative_mfg_lt`,`item`.`cumulative_total_lt` AS `cumulative_total_lt`,`item`.`lt_lot_size` AS `lt_lot_size`,`item`.`build_in_wip_cb` AS `build_in_wip_cb`,`item`.`wip_supply_type` AS `wip_supply_type`,`item`.`customer_ordered_cb` AS `customer_ordered_cb`,`item`.`internal_ordered_cb` AS `internal_ordered_cb`,`item`.`shippable_cb` AS `shippable_cb`,`item`.`returnable_cb` AS `returnable_cb`,`item`.`invoiceable_cb` AS `invoiceable_cb`,`item`.`billing_type` AS `billing_type`,`item`.`service_request_cb` AS `service_request_cb`,`item`.`atp` AS `atp`,`item`.`picking_rule` AS `picking_rule`,`item`.`sourcing_rule_id` AS `sourcing_rule_id`,`item`.`sales_ac_id` AS `sales_ac_id`,`item`.`cogs_ac_id` AS `cogs_ac_id`,`item`.`deferred_cogs_ac_id` AS `deferred_cogs_ac_id`,`item`.`ip_tax_class` AS `ip_tax_class`,`item`.`op_tax_class` AS `op_tax_class`,`item`.`ap_payment_term` AS `ap_payment_term`,`item`.`ar_payment_term` AS `ar_payment_term`,`item`.`duration` AS `duration`,`item`.`rev_enabled_cb` AS `rev_enabled_cb`,`item`.`rounding_option` AS `rounding_option`,`item`.`onhand_with_rev_cb` AS `onhand_with_rev_cb`,`item`.`item_rev_number` AS `item_rev_number`,`item`.`am_asset_type` AS `am_asset_type`,`item`.`am_activity_cause` AS `am_activity_cause`,`item`.`am_activity_type` AS `am_activity_type`,`item`.`am_activity_source` AS `am_activity_source`,`item`.`discount_class` AS `discount_class`,`item`.`demand_class` AS `demand_class`,`item`.`costing_method` AS `costing_method`,`item`.`frozen_cost` AS `frozen_cost`,`item`.`created_by` AS `created_by`,`item`.`creation_date` AS `creation_date`,`item`.`last_updated_by` AS `last_updated_by`,`item`.`last_update_date` AS `last_update_date` from (((`inv_item` `item` left join `gl_ac_profile_header` `gaph` on((`gaph`.`gl_ac_profile_header_id` = `item`.`gl_ac_profile_header_id`))) join `inv_item_master` `iim` on((`iim`.`inv_item_master_id` = `item`.`inv_item_master_id`))) join `mdm_inventory_org` `org` on((`org`.`mdm_inventory_org_id` = `item`.`mdm_inventory_org_id`))) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -9546,121 +9546,235 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `xxGetAllAccounts`( IN  docAactionCode varchar(50),
-                                                              IN  itemCustomerSite varchar(50),
-                                                              IN  itemSupplierSite varchar(50),
-                                                              IN  item varchar(50),
-                                                              IN  customerSite varchar(50),
-                                                              IN  supplierSite varchar(50),
-                                                              IN  customer varchar(50),
-                                                              IN  supplier varchar(50),
-                                                              IN  subInventory varchar(50),
-                                                              IN  inventory varchar(50),
-                                                              IN  businessUnit varchar(50),
+CREATE DEFINER=`root`@`localhost` PROCEDURE `xxGetAllAccounts`( IN  docAactionCode varchar(50),
+
+                                                              IN  itemCustomerSite varchar(50),
+
+                                                              IN  itemSupplierSite varchar(50),
+
+                                                              IN  item varchar(50),
+
+                                                              IN  customerSite varchar(50),
+
+                                                              IN  supplierSite varchar(50),
+
+                                                              IN  customer varchar(50),
+
+                                                              IN  supplier varchar(50),
+
+                                                              IN  subInventory varchar(50),
+
+                                                              IN  inventory varchar(50),
+
+                                                              IN  businessUnit varchar(50),
+
                                                               IN  legalOrg varchar(50))
-BEGIN
-    DECLARE drAcId int;
-    DECLARE crAcId int;
-    SET drAcId =0;
-    SET crAcId = 0;
-    if(itemCustomerSite !='')
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', itemCustomerSite);
-    SET crAcId = get_ac_id(docAactionCode, 'C', itemCustomerSite);
-    end if;
-
-
-
-    if  crAcId =0 && itemSupplierSite !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', itemSupplierSite);
-    end if;
-
-    if crAcId = 0 && item !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', item);
-    end if;
-
-    if crAcId = 0 && customerSite !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', customerSite);
-    end if;
-
-    if crAcId = 0 && supplierSite !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', supplierSite);
-    end if;
-
-    if crAcId = 0 && customer !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', customer);
-    end if;
-
-    if crAcId = 0 && supplier !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', supplier);
-    end if;
-
-    if crAcId = 0 && subInventory !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', subInventory);
-    end if;
-
-    if crAcId = 0 && inventory !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', inventory);
-    end if;
-
-    if crAcId = 0 && businessUnit !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', businessUnit);
-    end if;
-
-    if crAcId = 0 && legalOrg !=''
-    THEN SET crAcId = get_ac_id(docAactionCode, 'C', legalOrg);
-    end if;
-
-
-    if  drAcId =0 && itemSupplierSite !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', itemSupplierSite);
-    end if;
-
-    if drAcId = 0 && item !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', item);
-    end if;
-
-    if drAcId = 0 && customerSite !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', customerSite);
-    end if;
-
-    if drAcId = 0 && supplierSite !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', supplierSite);
-    end if;
-
-    if drAcId = 0 && customer !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', customer);
-    end if;
-
-    if drAcId = 0 && supplier !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', supplier);
-    end if;
-
-    if drAcId = 0 && subInventory !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', subInventory);
-    end if;
-
-    if drAcId = 0 && inventory !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', inventory);
-    end if;
-
-    if drAcId = 0 && businessUnit !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', businessUnit);
-    end if;
-
-    if drAcId = 0 && legalOrg !=''
-    THEN SET drAcId = get_ac_id(docAactionCode, 'D', legalOrg);
-    end if;
-
-    if drAcId > 0 && crAcId > 0
-    then  SELECT * from inoerp.gl_ac_profile_line_ev where gl_ac_profile_header_id IN (drAcId,crAcId);
-    else if crAcId > 0
-    then  SELECT * from inoerp.gl_ac_profile_line_ev where gl_ac_profile_header_id = crAcId;
-    else if crAcId > 0
-    then  SELECT * from inoerp.gl_ac_profile_line_ev where gl_ac_profile_header_id = crAcId;
-    end if;
-    end if;
-    end if;
-
+BEGIN
+
+    DECLARE drAcId int;
+
+    DECLARE crAcId int;
+
+    SET drAcId =0;
+
+    SET crAcId = 0;
+
+    if(itemCustomerSite !='')
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', itemCustomerSite);
+
+    SET crAcId = get_ac_id(docAactionCode, 'C', itemCustomerSite);
+
+    end if;
+
+
+
+
+
+
+
+    if  crAcId =0 && itemSupplierSite !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', itemSupplierSite);
+
+    end if;
+
+
+
+    if crAcId = 0 && item !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', item);
+
+    end if;
+
+
+
+    if crAcId = 0 && customerSite !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', customerSite);
+
+    end if;
+
+
+
+    if crAcId = 0 && supplierSite !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', supplierSite);
+
+    end if;
+
+
+
+    if crAcId = 0 && customer !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', customer);
+
+    end if;
+
+
+
+    if crAcId = 0 && supplier !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', supplier);
+
+    end if;
+
+
+
+    if crAcId = 0 && subInventory !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', subInventory);
+
+    end if;
+
+
+
+    if crAcId = 0 && inventory !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', inventory);
+
+    end if;
+
+
+
+    if crAcId = 0 && businessUnit !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', businessUnit);
+
+    end if;
+
+
+
+    if crAcId = 0 && legalOrg !=''
+
+    THEN SET crAcId = get_ac_id(docAactionCode, 'C', legalOrg);
+
+    end if;
+
+
+
+
+
+    if  drAcId =0 && itemSupplierSite !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', itemSupplierSite);
+
+    end if;
+
+
+
+    if drAcId = 0 && item !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', item);
+
+    end if;
+
+
+
+    if drAcId = 0 && customerSite !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', customerSite);
+
+    end if;
+
+
+
+    if drAcId = 0 && supplierSite !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', supplierSite);
+
+    end if;
+
+
+
+    if drAcId = 0 && customer !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', customer);
+
+    end if;
+
+
+
+    if drAcId = 0 && supplier !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', supplier);
+
+    end if;
+
+
+
+    if drAcId = 0 && subInventory !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', subInventory);
+
+    end if;
+
+
+
+    if drAcId = 0 && inventory !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', inventory);
+
+    end if;
+
+
+
+    if drAcId = 0 && businessUnit !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', businessUnit);
+
+    end if;
+
+
+
+    if drAcId = 0 && legalOrg !=''
+
+    THEN SET drAcId = get_ac_id(docAactionCode, 'D', legalOrg);
+
+    end if;
+
+
+
+    if drAcId > 0 && crAcId > 0
+
+    then  SELECT * from inoerp.gl_ac_profile_line_ev where gl_ac_profile_header_id IN (drAcId,crAcId);
+
+    else if crAcId > 0
+
+    then  SELECT * from inoerp.gl_ac_profile_line_ev where gl_ac_profile_header_id = crAcId;
+
+    else if crAcId > 0
+
+    then  SELECT * from inoerp.gl_ac_profile_line_ev where gl_ac_profile_header_id = crAcId;
+
+    end if;
+
+    end if;
+
+    end if;
+
+
+
 END ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;

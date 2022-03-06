@@ -128,7 +128,7 @@ CREATE TABLE `inv_item_master` (
   `sourcing_rule_id` int DEFAULT NULL,
   `sales_ac_id` int DEFAULT NULL,
   `cogs_ac_id` int DEFAULT NULL,
-  `deffered_cogs_ac_id` int DEFAULT NULL,
+  `deferred_cogs_ac_id` int DEFAULT NULL,
   `ip_tax_class` varchar(25) DEFAULT NULL,
   `op_tax_class` varchar(25) DEFAULT NULL,
   `ap_payment_term` int DEFAULT NULL,
