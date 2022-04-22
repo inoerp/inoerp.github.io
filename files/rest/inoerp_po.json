@@ -51,7 +51,7 @@
       }
     },
     {
-      "name": "po",
+      "name": "PO",
       "description": "Purchase Orders",
       "externalDocs": {
         "description": "Read more",
@@ -59,7 +59,7 @@
       }
     },
     {
-      "name": "Purchase Agreement",
+      "name": "PurchaseAgreement",
       "description": "Purchase Agreement",
       "externalDocs": {
         "description": "Read more",
@@ -74,19 +74,17 @@
         "url": "http://docs.inoerp.com/docs/purchasing/configuration"
       }
     }
-
-
   ],
   "paths": {
-    "/pet": {
-      "put": {
+    "/HrEmployeeEv": {
+      "get": {
         "tags": [
-          "pet"
+          "PO"
         ],
-        "summary": "Update an existing pet",
-        "operationId": "updatePet",
+        "summary": "View all purchase orders",
+        "operationId": "getHrEmployeeEv",
         "requestBody": {
-          "description": "Pet object that needs to be added to the store",
+          "description": "Get a list of all purchase orders created in the system",
           "content": {
             "application/json": {
               "schema": {
@@ -1115,17 +1113,13 @@
         "type": "oauth2",
         "flows": {
           "implicit": {
-            "authorizationUrl": "http://petstore.swagger.io/oauth/dialog",
-            "scopes": {
-              "write:pets": "modify pets in your account",
-              "read:pets": "read your pets"
-            }
+            "authorizationUrl": "http://demo.inoerp.com"
           }
         }
       },
       "api_key": {
-        "type": "apiKey",
-        "name": "api_key",
+        "username": "demo",
+        "password": "demo",
         "in": "header"
       }
     }
