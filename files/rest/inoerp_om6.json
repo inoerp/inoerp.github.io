@@ -1,0 +1,96 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "REST API For InoERP Order Management Module",
+		"description": "REST APIs are available for all documents and transactions in inoERP. You can find out more about inoERP at [http://docs.inoerp.com](http://docs.inoerp.com).",
+		"termsOfService": "http://docs.inoerp.com/docs/privacy",
+		"contact": {
+			"email": "contact@rikdata.com"
+		},
+		"version": "1.0.0"
+	},
+	"externalDocs": {
+		"description": "Find out more about inoERP",
+		"url": "http://docs.inoerp.com/"
+	},
+	"servers": {
+		"url": "http://demo.inoerp.com:8085/api/ierp/"
+	},
+	"tags": [{
+		"name": "so",
+		"description": "Sd So Header Ev "
+	}],
+	"paths": {
+
+	},
+	"components": {
+		"schemas": {
+			"SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdCreateDeliveryV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdDeliveryAllV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdDeliveryHeader_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdDeliveryHeaderEv_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdDeliveryLineEv_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdDeliveryLineForArtV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdDeliveryLineForInvtV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdOpenSalesOrdersV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdSoDetailEv_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdSoDetailForArtV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdSoDetailForSdlV_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdSoHeader_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdSoLine_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			},
+			"SdSoLineEv_SdSoHeaderEv": {
+				"type": "object",
+				"properties": {}
+			}
+		},
+		"securitySchemes": {
+			"inoerp_auth": {
+				"type": "http",
+				"scheme": "bearer"
+			}
+		}
+	}
+}
