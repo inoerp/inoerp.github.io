@@ -19,10 +19,10 @@
   },
   "servers": [
     {
-      "url": "http://demo.inoerp.com/"
+      "url": "http://demo.inoerp.com:8085/api/ierp"
     },
     {
-      "url": "http://demo.inoerp.com/"
+      "url": "http://demo.inoerp.com:8085/api/ierp"
     }
   ],
   "tags": [
