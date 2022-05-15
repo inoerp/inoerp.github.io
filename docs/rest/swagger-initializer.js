@@ -22,7 +22,7 @@ window.onload = function() {
 
     dom_id: "#swagger-ui",
     presets: [
-      SwaggerUIBundle.presets.apis,
+
       SwaggerUIStandalonePreset
     ],
     plugins: [
