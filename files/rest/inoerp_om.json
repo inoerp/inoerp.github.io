@@ -1,689 +1,175 @@
 {
-	"openapi": "3.0.1",
-	"info": {
-		"title": "REST API For InoERP Order Management Module",
-		"description": "REST APIs are available for all documents and transactions in inoERP. You can find out more about inoERP at [http://docs.inoerp.com](http://docs.inoerp.com).",
-		"termsOfService": "http://docs.inoerp.com/docs/privacy",
-		"contact": {
-			"email": "contact@rikdata.com"
-		},
-		"version": "1.0.0"
-	},
-	"externalDocs": {
-		"description": "Find out more about inoERP",
-		"url": "http://docs.inoerp.com/"
-	},
-	"servers": {
-		"url": "http://demo.inoerp.com:8085/api/ierp/"
-	},
-	"tags": [{
-		"name": "so",
-		"description": "Sd So Header "
-	}],
-	"paths": {
-		"/SdSoHeader": {
-			"get": {
-				"tags": ["so"],
-				"summary": "Get all Sd So Header ",
-				"description": "Fetches first 200 values of sd_so_header. Use filters to get specific object.",
-				"operationId": "getSdSoHeader",
-				"parameters": {
-					"items": {
-						"$ref": "#/components/schemas/SdSoHeader"
-					}
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"404": {
-						"404": {
-							"description": "No object found for SdSoHeader entity. Search with different criteria",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": ["so"],
-				"summary": "Create a new Sd So Header ",
-				"description": "Post body must contain all required fields for Sd So Header ",
-				"operationId": "postSdSoHeader",
-				"requestBody": {
-					"description": "Enter Sd So Header  data that needs to be created",
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/SdSoHeader"
-							}
-						}
-					},
-					"required": true
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			}
-		},
-		"/SdSoHeaderEv": {
-			"get": {
-				"tags": ["so"],
-				"summary": "Get all Sd So Header Ev ",
-				"description": "Fetches first 200 values of sd_so_header_ev. Use filters to get specific object.",
-				"operationId": "getSdSoHeaderEv",
-				"parameters": {
-					"items": {
-						"$ref": "#/components/schemas/SdSoHeaderEv"
-					}
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"404": {
-						"404": {
-							"description": "No object found for SdSoHeaderEv entity. Search with different criteria",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": ["so"],
-				"summary": "Create a new Sd So Header Ev ",
-				"description": "Post body must contain all required fields for Sd So Header Ev ",
-				"operationId": "postSdSoHeaderEv",
-				"requestBody": {
-					"description": "Enter Sd So Header Ev  data that needs to be created",
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/SdSoHeaderEv"
-							}
-						}
-					},
-					"required": true
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			}
-		},
-		"/SdSoHeader(vvSdSoHeaderId={{sdSoHeaderId}})": {
-			"get": {
-				"tags": ["so"],
-				"summary": "Get all Sd So Header ",
-				"description": "Fetches first 200 values of sd_so_header. Use filters to get specific object.",
-				"operationId": "getSdSoHeader(vvSdSoHeaderId={{sdSoHeaderId}})",
-				"parameters": {
-					"items": {
-						"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeader"
-					}
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"404": {
-						"404": {
-							"description": "No object found for SdSoDetailForSdlV_SdSoHeader entity. Search with different criteria",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": ["so"],
-				"summary": "Create a new Sd So Header ",
-				"description": "Post body must contain all required fields for Sd So Header ",
-				"operationId": "postSdSoHeader(vvSdSoHeaderId={{sdSoHeaderId}})",
-				"requestBody": {
-					"description": "Enter Sd So Header  data that needs to be created",
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeader"
-							}
-						}
-					},
-					"required": true
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			}
-		},
-		"/SdSoHeaderEv(vvSdSoHeaderId={{sdSoHeaderId}})": {
-			"get": {
-				"tags": ["so"],
-				"summary": "Get all Sd So Header Ev ",
-				"description": "Fetches first 200 values of sd_so_header_ev. Use filters to get specific object.",
-				"operationId": "getSdSoHeaderEv(vvSdSoHeaderId={{sdSoHeaderId}})",
-				"parameters": {
-					"items": {
-						"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
-					}
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"404": {
-						"404": {
-							"description": "No object found for SdSoDetailForSdlV_SdSoHeaderEv entity. Search with different criteria",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": ["so"],
-				"summary": "Create a new Sd So Header Ev ",
-				"description": "Post body must contain all required fields for Sd So Header Ev ",
-				"operationId": "postSdSoHeaderEv(vvSdSoHeaderId={{sdSoHeaderId}})",
-				"requestBody": {
-					"description": "Enter Sd So Header Ev  data that needs to be created",
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
-							}
-						}
-					},
-					"required": true
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			}
-		},
-		"/SdSoHeader(sdSoHeaderId={{sdSoHeaderId}})": {
-			"get": {
-				"tags": ["so"],
-				"summary": "Get all Sd So Header ",
-				"description": "Fetches first 200 values of sd_so_header. Use filters to get specific object.",
-				"operationId": "getSdSoHeader(sdSoHeaderId={{sdSoHeaderId}})",
-				"parameters": {
-					"items": {
-						"$ref": "#/components/schemas/SdSoLineEv_SdSoHeader"
-					}
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoLineEv_SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"404": {
-						"404": {
-							"description": "No object found for SdSoLineEv_SdSoHeader entity. Search with different criteria",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoLineEv_SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": ["so"],
-				"summary": "Create a new Sd So Header ",
-				"description": "Post body must contain all required fields for Sd So Header ",
-				"operationId": "postSdSoHeader(sdSoHeaderId={{sdSoHeaderId}})",
-				"requestBody": {
-					"description": "Enter Sd So Header  data that needs to be created",
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/SdSoLineEv_SdSoHeader"
-							}
-						}
-					},
-					"required": true
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoLineEv_SdSoHeader"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			}
-		},
-		"/SdSoHeaderEv(sdSoHeaderId={{sdSoHeaderId}})": {
-			"get": {
-				"tags": ["so"],
-				"summary": "Get all Sd So Header Ev ",
-				"description": "Fetches first 200 values of sd_so_header_ev. Use filters to get specific object.",
-				"operationId": "getSdSoHeaderEv(sdSoHeaderId={{sdSoHeaderId}})",
-				"parameters": {
-					"items": {
-						"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
-					}
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"404": {
-						"404": {
-							"description": "No object found for SdSoLineEv_SdSoHeaderEv entity. Search with different criteria",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": ["so"],
-				"summary": "Create a new Sd So Header Ev ",
-				"description": "Post body must contain all required fields for Sd So Header Ev ",
-				"operationId": "postSdSoHeaderEv(sdSoHeaderId={{sdSoHeaderId}})",
-				"requestBody": {
-					"description": "Enter Sd So Header Ev  data that needs to be created",
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
-							}
-						}
-					},
-					"required": true
-				},
-				"responses": {
-					"200": {
-						"200": {
-							"description": "The operation is successfully completed.",
-							"content": {
-								"application/json": {
-									"schema": {
-										"type": "array",
-										"items": {
-											"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
-										}
-									}
-								}
-							}
-						}
-					},
-					"405": {
-						"405": {
-							"description": "Validation exception/Invalid data"
-						}
-					}
-				}
-			}
-		}
-	},
-	"components": {
-		"schemas": {
-			"SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdCreateDeliveryV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdCreateDeliveryV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryAllV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryAllV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryHeader_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryHeader_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryHeaderEv_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryHeaderEv_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryLineEv_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryLineEv_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryLineForArtV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryLineForArtV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryLineForInvtV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdDeliveryLineForInvtV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdOpenSalesOrdersV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdOpenSalesOrdersV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoDetailEv_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoDetailEv_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoDetailForArtV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoDetailForArtV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoDetailForSdlV_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoDetailForSdlV_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoHeader_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoHeaderEv_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoLine_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoLine_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoLineEv_SdSoHeader": {
-				"type": "object",
-				"properties": {}
-			},
-			"SdSoLineEv_SdSoHeaderEv": {
-				"type": "object",
-				"properties": {}
-			}
-		},
-		"securitySchemes": {
-			"inoerp_auth": {
-				"type": "http",
-				"scheme": "bearer"
-			}
-		}
-	}
+  "openapi": "3.0.1",
+  "info": {
+    "title": "REST API For InoERP Purchasing Module",
+    "description": "REST APIs are available for all documents and transactions in inoERP. You can find out more about  inoERP at [http://docs.inoerp.com](http://docs.inoerp.com).",
+    "termsOfService": "http://docs.inoerp.com/docs/privacy",
+    "contact": {
+      "email": "contact@inoerp.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "description": "Find out more about inoERP",
+    "url": "http://docs.inoerp.com/"
+  },
+  "servers": [
+    {
+      "url": "http://demo.inoerp.com:8085/api/ierp/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "RFQ",
+      "description": "Request For Quotation",
+      "externalDocs": {
+        "description": "Read more",
+        "url": "http://docs.inoerp.com/docs/purchasing/request-for-quotation"
+      }
+    },
+    {
+      "name": "Quotation",
+      "description": "Quotation",
+      "externalDocs": {
+        "description": "Read more",
+        "url": "http://docs.inoerp.com/docs/purchasing/quotation"
+      }
+    },
+    {
+      "name": "Requisition",
+      "description": "Requisition",
+      "externalDocs": {
+        "description": "Read more",
+        "url": "http://docs.inoerp.com/docs/purchasing/requisition"
+      }
+    },
+    {
+      "name": "PO",
+      "description": "Purchase Order",
+      "externalDocs": {
+        "description": "Read more",
+        "url": "http://docs.inoerp.com/docs/purchasing/purchase-order"
+      }
+    },
+    {
+      "name": "PurchaseAgreement",
+      "description": "Purchase Agreement",
+      "externalDocs": {
+        "description": "Read more",
+        "url": "http://docs.inoerp.com/docs/purchasing/purchase-agreement"
+      }
+    },
+    {
+      "name": "Configuration",
+      "description": "Configuration",
+      "externalDocs": {
+        "description": "Read more",
+        "url": "http://docs.inoerp.com/docs/purchasing/configuration"
+      }
+    }
+  ],
+  "paths": {
+    "/PoHeaderEv": {
+      "get": {
+        "tags": ["PO"],
+        "summary": "View all purchase orders",
+        "operationId": "getPoHeaderEv",
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          },
+          "405": {
+            "description": "Validation exception",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "inoerp_auth": ["write:pets", "read:pets"]
+          }
+        ],
+        "x-codegen-request-body-name": "body"
+      },
+      "post": {
+        "tags": ["PO"],
+        "summary": "Add a new object",
+        "operationId": "addPurchaseOrder",
+        "requestBody": {
+          "description": "Purchase order that needs to be added",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PurchaseOrderHeaderEv"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "405": {
+            "description": "Invalid input",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "inoerp_auth": ["write:pets", "read:pets"]
+          }
+        ],
+        "x-codegen-request-body-name": "body"
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PurchaseOrderHeaderEv": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "petId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shipDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "description": "Order Status",
+            "enum": ["placed", "approved", "delivered"]
+          },
+          "complete": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "xml": {
+          "name": "Order"
+        }
+      }
+    },
+    "securitySchemes": {
+      "inoerp_auth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
 }
