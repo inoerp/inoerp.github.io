@@ -83,22 +83,6 @@
         ],
         "summary": "View all purchase orders",
         "operationId": "getHrEmployeeEv",
-        "requestBody": {
-          "description": "Get a list of all purchase orders created in the system",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Pet"
-              }
-            },
-            "application/xml": {
-              "schema": {
-                "$ref": "#/components/schemas/Pet"
-              }
-            }
-          },
-          "required": true
-        },
         "responses": {
           "400": {
             "description": "Invalid ID supplied",
@@ -115,7 +99,7 @@
         },
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -153,7 +137,7 @@
         },
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -221,7 +205,7 @@
         },
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -283,7 +267,7 @@
         "deprecated": true,
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -338,7 +322,10 @@
         },
         "security": [
           {
-            "api_key": []
+            "inoerp_auth": [
+              "write:pets",
+              "read:pets"
+            ]
           }
         ]
       },
@@ -386,7 +373,7 @@
         },
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -430,7 +417,7 @@
         },
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -490,7 +477,7 @@
         },
         "security": [
           {
-            "petstore_auth": [
+            "inoerp_auth": [
               "write:pets",
               "read:pets"
             ]
@@ -524,7 +511,10 @@
         },
         "security": [
           {
-            "api_key": []
+            "inoerp_auth": [
+              "write:pets",
+              "read:pets"
+            ]
           }
         ]
       }
@@ -1109,18 +1099,9 @@
       }
     },
     "securitySchemes": {
-      "petstore_auth": {
-        "type": "oauth2",
-        "flows": {
-          "implicit": {
-            "authorizationUrl": "http://demo.inoerp.com"
-          }
-        }
-      },
-      "api_key": {
-        "username": "demo",
-        "password": "demo",
-        "in": "header"
+      "inoerp_auth": {
+        "type": "http",
+        "scheme": "bearer"
       }
     }
   }
