@@ -75,9 +75,7 @@
   "paths": {
     "/PoHeaderEv": {
       "get": {
-        "tags": [
-          "PO"
-        ],
+        "tags": ["PO"],
         "summary": "View all purchase orders",
         "operationId": "getPoHeaderEv",
         "responses": {
@@ -96,18 +94,13 @@
         },
         "security": [
           {
-            "inoerp_auth": [
-              "write:pets",
-              "read:pets"
-            ]
+            "inoerp_auth": ["write:pets", "read:pets"]
           }
         ],
         "x-codegen-request-body-name": "body"
       },
       "post": {
-        "tags": [
-          "PO"
-        ],
+        "tags": ["PO"],
         "summary": "Add a new object",
         "operationId": "addPurchaseOrder",
         "requestBody": {
@@ -129,15 +122,12 @@
         },
         "security": [
           {
-            "inoerp_auth": [
-              "write:pets",
-              "read:pets"
-            ]
+            "inoerp_auth": ["write:pets", "read:pets"]
           }
         ],
         "x-codegen-request-body-name": "body"
       }
-    },
+    }
   },
   "components": {
     "schemas": {
@@ -163,11 +153,7 @@
           "status": {
             "type": "string",
             "description": "Order Status",
-            "enum": [
-              "placed",
-              "approved",
-              "delivered"
-            ]
+            "enum": ["placed", "approved", "delivered"]
           },
           "complete": {
             "type": "boolean",
@@ -177,7 +163,7 @@
         "xml": {
           "name": "Order"
         }
-      },
+      }
     },
     "securitySchemes": {
       "inoerp_auth": {
