@@ -111,19 +111,14 @@
         "tags": [
           "PO"
         ],
-        "summary": "Add a new pet to the store",
-        "operationId": "addPet",
+        "summary": "Add a new object",
+        "operationId": "addPurchaseOrder",
         "requestBody": {
-          "description": "Pet object that needs to be added to the store",
+          "description": "Purchase order that needs to be added",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Pet"
-              }
-            },
-            "application/xml": {
-              "schema": {
-                "$ref": "#/components/schemas/Pet"
+                "$ref": "#/components/schemas/PurchaseOrderHeaderEv"
               }
             }
           },
@@ -149,7 +144,7 @@
   },
   "components": {
     "schemas": {
-      "Order": {
+      "PurchaseOrderHeaderEv": {
         "type": "object",
         "properties": {
           "id": {
@@ -249,58 +244,6 @@
         },
         "xml": {
           "name": "Tag"
-        }
-      },
-      "Pet": {
-        "required": [
-          "name",
-          "photoUrls"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "category": {
-            "$ref": "#/components/schemas/Category"
-          },
-          "name": {
-            "type": "string",
-            "example": "doggie"
-          },
-          "photoUrls": {
-            "type": "array",
-            "xml": {
-              "name": "photoUrl",
-              "wrapped": true
-            },
-            "items": {
-              "type": "string"
-            }
-          },
-          "tags": {
-            "type": "array",
-            "xml": {
-              "name": "tag",
-              "wrapped": true
-            },
-            "items": {
-              "$ref": "#/components/schemas/Tag"
-            }
-          },
-          "status": {
-            "type": "string",
-            "description": "pet status in the store",
-            "enum": [
-              "available",
-              "pending",
-              "sold"
-            ]
-          }
-        },
-        "xml": {
-          "name": "Pet"
         }
       },
       "ApiResponse": {
