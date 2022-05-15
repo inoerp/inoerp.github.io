@@ -76,13 +76,13 @@
     }
   ],
   "paths": {
-    "/HrEmployeeEv": {
+    "/PoHeaderEv": {
       "get": {
         "tags": [
           "PO"
         ],
         "summary": "View all purchase orders",
-        "operationId": "getHrEmployeeEv",
+        "operationId": "getPoHeaderEv",
         "responses": {
           "400": {
             "description": "Invalid ID supplied",
