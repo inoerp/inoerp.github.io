@@ -13,15 +13,236 @@
 		"description": "Find out more about inoERP",
 		"url": "http://docs.inoerp.com/"
 	},
-	"servers": {
+	"servers": [{
 		"url": "http://demo.inoerp.com:8085/api/ierp/"
-	},
+	}],
 	"tags": [{
 		"name": "so",
 		"description": "Sd So Header Ev "
 	}],
 	"paths": {
-
+		"/SdSoHeaderEv": {
+			"get": {
+				"tags": ["so"],
+				"summary": "Get all Sd So Header Ev ",
+				"description": "Fetches first 200 values of sd_so_header_ev. Use filters to get specific object.",
+				"operationId": "getSdSoHeaderEv",
+				"responses": {
+					"200": {
+						"description": "The operation is successfully completed.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "No object found for SdSoHeaderEv entity. Search with different criteria",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Validation exception/Invalid data"
+					}
+				}
+			},
+			"post": {
+				"tags": ["so"],
+				"summary": "Create a new Sd So Header Ev ",
+				"description": "Post body must contain all required fields for Sd So Header Ev ",
+				"operationId": "postSdSoHeaderEv",
+				"requestBody": {
+					"description": "Enter Sd So Header Ev  data that needs to be created",
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/SdSoHeaderEv"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "The operation is successfully completed.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Validation exception/Invalid data"
+					}
+				}
+			}
+		},
+		"/SdSoHeaderEv(vvSdSoHeaderId=sdSoHeaderId)": {
+			"get": {
+				"tags": ["so"],
+				"summary": "Get all Sd So Header Ev ",
+				"description": "Fetches first 200 values of sd_so_header_ev. Use filters to get specific object.",
+				"operationId": "getSdSoHeaderEv(vvSdSoHeaderId={{sdSoHeaderId}})",
+				"responses": {
+					"200": {
+						"description": "The operation is successfully completed.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "No object found for SdSoDetailForSdlV_SdSoHeaderEv entity. Search with different criteria",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Validation exception/Invalid data"
+					}
+				}
+			},
+			"post": {
+				"tags": ["so"],
+				"summary": "Create a new Sd So Header Ev ",
+				"description": "Post body must contain all required fields for Sd So Header Ev ",
+				"operationId": "postSdSoHeaderEv(vvSdSoHeaderId={{sdSoHeaderId}})",
+				"requestBody": {
+					"description": "Enter Sd So Header Ev  data that needs to be created",
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "The operation is successfully completed.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoDetailForSdlV_SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Validation exception/Invalid data"
+					}
+				}
+			}
+		},
+		"/SdSoHeaderEv(sdSoHeaderId=sdSoHeaderId)": {
+			"get": {
+				"tags": ["so"],
+				"summary": "Get all Sd So Header Ev ",
+				"description": "Fetches first 200 values of sd_so_header_ev. Use filters to get specific object.",
+				"operationId": "getSdSoHeaderEv(sdSoHeaderId={{sdSoHeaderId}})",
+				"responses": {
+					"200": {
+						"description": "The operation is successfully completed.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "No object found for SdSoLineEv_SdSoHeaderEv entity. Search with different criteria",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Validation exception/Invalid data"
+					}
+				}
+			},
+			"post": {
+				"tags": ["so"],
+				"summary": "Create a new Sd So Header Ev ",
+				"description": "Post body must contain all required fields for Sd So Header Ev ",
+				"operationId": "postSdSoHeaderEv(sdSoHeaderId={{sdSoHeaderId}})",
+				"requestBody": {
+					"description": "Enter Sd So Header Ev  data that needs to be created",
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "The operation is successfully completed.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/SdSoLineEv_SdSoHeaderEv"
+									}
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Validation exception/Invalid data"
+					}
+				}
+			}
+		}
 	},
 	"components": {
 		"schemas": {
