@@ -23,7 +23,7 @@ A customer header contains customer name, number, type, status, etc.
 
 To view/create/update a customer, navigate to the "customer" search screen from your dashboard/favorite.
 
-<img src="/images/modules/ar/customer/customer_01.PNG" width="400"/>
+<img src="/images/modules/ar/customer/customer_01a.PNG" width="400"/>
 
 Enter the customer details or any other criteria in the search form and click on the search button to view an existing customer.  
 Click on create a new button to create a new customer; by manually entering all the information,

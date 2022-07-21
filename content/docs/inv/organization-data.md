@@ -16,7 +16,7 @@ A sub-inventory is a subdivision of an inventory organization representing eithe
 
 To view/create/update a Sub-Inventory, navigate to the "Sub-Inventory" search screen from your dashboard/favorite.
 
-<img src="/images/modules/inv/sub_inventory/sub_inventory_01.PNG" width="400"/>
+<img src="/images/modules/inv/sub_inventory/sub_inventory_01a.PNG" width="400"/>
 
 Enter the Sub-Inventory details or any other criteria in the search form and click on the search button to view an existing Sub-Inventory. Click on create a new button to create a new Sub-Inventory; by manually entering all the information. Copying an existing Sub-Inventory to a new Sub-Inventory is always better than manually entering all the data to create a new Sub-Inventory. 
 

@@ -29,7 +29,7 @@ A transaction header contains the supplier, business unit, currency-related info
 
 To view/create/update a transaction, navigate to the "transaction" search screen from your dashboard/favorite.
 
-<img src="/images/modules/ap/transaction/transaction_01.PNG" width="250"/>
+<img src="/images/modules/ap/transaction/transaction_01a.PNG" width="250"/>
 
 Enter the organization/transaction details or any other criteria in the search form and click on the search button to view an existing transaction.  
 Click on create a new button to create a new transaction; by manually entering all the information,

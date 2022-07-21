@@ -10,7 +10,7 @@ This documentation is incomplete.
 
 :::
 
-<img src="/images/modules/ap/agreement/agreement_99.PNG" width="600"/>
+<img src="/images/modules/ap/agreement/agreement_99a.PNG" width="600"/>
 
 
 An invoice agreement is a long-term contract between an organization and its suppliers on various products and related conditions (price, payment term, delivery terms, etc.). You can use invoice agreements to get (better) prices from a particular supplier for a specific list of products/services without committing them to precise purchase quantities. 
@@ -31,7 +31,7 @@ To create an invoice agreement, you need to enter Business Unit information, sup
 
 To view/create/update an invoice agreement, navigate to the "invoice agreement" search screen from your dashboard/favorite.
 
-<img src="/images/modules/ap/agreement/agreement_01.PNG" width="300"/>
+<img src="/images/modules/ap/agreement/agreement_01a.PNG" width="300"/>
 
 Enter the organization/invoice agreement details or any other criteria in the search form and click on the search button to view an existing invoice agreement.  
 Click on create a new button to create a new invoice agreement; by manually entering all the information,

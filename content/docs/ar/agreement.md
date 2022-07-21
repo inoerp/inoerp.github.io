@@ -4,7 +4,7 @@ title: Invoice Agreement
 sidebar_label: Invoice Agreement
 ---
 
-<img src="/images/modules/ar/agreement/agreement_99.PNG" width="600"/>
+<img src="/images/modules/ar/agreement/agreement_99a.PNG" width="600"/>
 
 
 An invoice agreement is a long-term contract between an organization and its customers on various products and related conditions (price, payment term, delivery terms, etc.). You can use invoice agreements to offer (better) prices to a particular customer group for a specific list of products/services without committing them to precise purchase quantities. 

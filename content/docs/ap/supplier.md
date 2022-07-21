@@ -24,7 +24,7 @@ A supplier header contains supplier name, number, type, status, etc.
 
 To view/create/update a supplier, navigate to the "supplier" search screen from your dashboard/favorite.
 
-<img src="/images/modules/ap/supplier/supplier_01.PNG" width="400"/>
+<img src="/images/modules/ap/supplier/supplier_01a.PNG" width="400"/>
 
 Enter the supplier details or any other criteria in the search form and click on the search button to view an existing supplier.  
 Click on create a new button to create a new supplier; by manually entering all the information,
