@@ -121,29 +121,29 @@ The reference groups show various ids for reference only. You don't need to ente
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvBuOrg*| Bu Org |defferedSelect|ENTITY|
-|**10**|*vvBuOrgCode*| Bu Org Code |defferedSelect|ENTITY|
-|**20**|*vvCustomerNumber*| Customer Number |defferedSelect|DATA|
-|**30**|*vvCustomerName*| Customer Name |defferedSelect|ENTITY|
-|**40**|*vvCustomerSiteNumber*| Customer Site Number |defferedSelect|DATA|
-|**50**|*vvCustomerSiteName*| Customer Site Name |defferedSelect|ENTITY|
-|**60**|*vvProjectManager*| Project Manager |defferedSelect|DEFAULT|
+|**10**|*vvBuOrg*| Bu Org |deferredSelect|ENTITY|
+|**10**|*vvBuOrgCode*| Bu Org Code |deferredSelect|ENTITY|
+|**20**|*vvCustomerNumber*| Customer Number |deferredSelect|DATA|
+|**30**|*vvCustomerName*| Customer Name |deferredSelect|ENTITY|
+|**40**|*vvCustomerSiteNumber*| Customer Site Number |deferredSelect|DATA|
+|**50**|*vvCustomerSiteName*| Customer Site Name |deferredSelect|ENTITY|
+|**60**|*vvProjectManager*| Project Manager |deferredSelect|DEFAULT|
 |**70**|*vvLevel*| Level |InputType.text|DEFAULT|
 |**80**|*vvLevelDescription*| Level Description |InputType.text|DEFAULT|
 |**90**|*vvLevelName*| Level Name |InputType.text|DEFAULT|
 |**100**|*vvLevelUniqueCode*| Level Unique Code |InputType.text|DEFAULT|
 |**110**|*prjProjectHeaderId*|Prj Project Header Id |InputType.text|REFERENCE|
-|**120**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**120**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**130**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**140**|*projectSource*|Project Source |InputType.textField|DEFAULT|
-|**150**|*projectName*|Project Name |defferedSelect|DEFAULT|
-|**160**|*buOrgId*|Bu Org Id |defferedSelect|REFERENCE|
+|**150**|*projectName*|Project Name |deferredSelect|DEFAULT|
+|**160**|*buOrgId*|Bu Org Id |deferredSelect|REFERENCE|
 |**170**|*prjProjectType*|Prj Project Type |InputType.select|CONTROL|
 |**180**|*projectClass*|Project Class |InputType.textField|DEFAULT|
-|**190**|*projectNumber*|Project Number |defferedSelect|DATA|
-|**200**|*arCustomerId*|Ar Customer Id |defferedSelect|REFERENCE|
-|**210**|*arCustomerSiteId*|Ar Customer Site Id |defferedSelect|REFERENCE|
-|**220**|*pmEmployeeId*|Pm Employee Id |defferedSelect|REFERENCE|
+|**190**|*projectNumber*|Project Number |deferredSelect|DATA|
+|**200**|*arCustomerId*|Ar Customer Id |deferredSelect|REFERENCE|
+|**210**|*arCustomerSiteId*|Ar Customer Site Id |deferredSelect|REFERENCE|
+|**220**|*pmEmployeeId*|Pm Employee Id |deferredSelect|REFERENCE|
 |**230**|*projectStatus*|Project Status |InputType.select|CONTROL|
 |**240**|*approvalStatus*|Approval Status |InputType.select|CONTROL|
 |**250**|*description*|Description |InputType.textField|DEFAULT|
@@ -160,8 +160,8 @@ The reference groups show various ids for reference only. You don't need to ente
 |**360**|*roleListId*|Role List Id |InputType.text|REFERENCE|
 |**370**|*prjWorkType*|Prj Work Type |InputType.number|CONTROL|
 |**380**|*probability*|Probability |InputType.textField|DEFAULT|
-|**390**|*docCurrency*|Doc Currency |defferedSelect|FINANCE|
-|**400**|*exchangeRateType*|Exchange Rate Type |defferedSelect|CONTROL|
+|**390**|*docCurrency*|Doc Currency |deferredSelect|FINANCE|
+|**400**|*exchangeRateType*|Exchange Rate Type |deferredSelect|CONTROL|
 |**410**|*exchangeRate*|Exchange Rate |InputType.textField|FINANCE|
 |**420**|*opportunityValue*|Opportunity Value |InputType.textField|DEFAULT|
 |**430**|*expectedApprovalDate*|Expected Approval Date |InputType.date|DATE|
@@ -186,7 +186,7 @@ The reference groups show various ids for reference only. You don't need to ente
 |**620**|*revEnabledCb*|Rev Enabled Cb |InputType.switchField|DEFAULT|
 |**630**|*revNumber*|Rev Number |InputType.number|DATA|
 |**680**|*docStatus*|Doc Status |InputType.select|CONTROL|
-|**690**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |defferedSelect|REFERENCE|
+|**690**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |deferredSelect|REFERENCE|
 |**5640**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5650**|*creationDate*|Creation Date |InputType.text|REFERENCE|
 |**5660**|*lastUpdatedBy*|Last Updated By |InputType.text|REFERENCE|

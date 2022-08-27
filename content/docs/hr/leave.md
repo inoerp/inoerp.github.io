@@ -97,10 +97,10 @@ The reference groups show various ids for reference only. You don't need to ente
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*hrLeaveApplicationId*|Hr Leave Application Id |InputType.text|REFERENCE|
-|**10**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
+|**10**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
 |**20**|*fromDate*|From Date |InputType.date|DATE|
 |**30**|*toDate*|To Date |InputType.date|DATE|
-|**40**|*hrLeaveTypeId*|Hr Leave Type Id |defferedSelect|CONTROL|
+|**40**|*hrLeaveTypeId*|Hr Leave Type Id |deferredSelect|CONTROL|
 |**50**|*requestDate*|Request Date |InputType.date|DATE|
 |**60**|*approvalStatus*|Approval Status |InputType.text|CONTROL|
 |**70**|*days*|Days |InputType.textField|DEFAULT|
@@ -108,7 +108,7 @@ The reference groups show various ids for reference only. You don't need to ente
 |**90**|*contactDetails*|Contact Details |InputType.textField|DEFAULT|
 |**100**|*sysNotificationId*|Sys Notification Id |InputType.text|REFERENCE|
 |**110**|*sysNotificationGroupId*|Sys Notification Group Id |InputType.text|REFERENCE|
-|**160**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**160**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**170**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5120**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5130**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -269,16 +269,16 @@ You can configure the application to show which fields should be shown under whi
 |**10**|*vvLastName*| Last Name |InputType.text|DEFAULT|
 |**20**|*vvEmail*| Email |InputType.text|ENTITY|
 |**30**|*vvIdentificationNumber*| Identification Number |InputType.text|DATA|
-|**40**|*vvLeaveType*| Leave Type |defferedSelect|CONTROL|
-|**50**|*vvLeaveGroup*| Leave Group |defferedSelect|DEFAULT|
+|**40**|*vvLeaveType*| Leave Type |deferredSelect|CONTROL|
+|**50**|*vvLeaveGroup*| Leave Group |deferredSelect|DEFAULT|
 |**60**|*vvLeaveCategory*| Leave Category |InputType.text|DEFAULT|
 |**70**|*hrLeaveAssignmentId*|Hr Leave Assignment Id |InputType.text|REFERENCE|
-|**80**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
-|**90**|*hrLeaveTypeId*|Hr Leave Type Id |defferedSelect|CONTROL|
+|**80**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
+|**90**|*hrLeaveTypeId*|Hr Leave Type Id |deferredSelect|CONTROL|
 |**100**|*year*|Year |InputType.number|DEFAULT|
 |**110**|*periodNumber*|Period Number |InputType.number|DATA|
 |**120**|*days*|Days |InputType.textField|DEFAULT|
-|**170**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**170**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**180**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5130**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5140**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -481,7 +481,7 @@ You can configure the application to show which fields should be shown under whi
 |**50**|*currentYear*|Current Year |InputType.number|DEFAULT|
 |**60**|*currentPeriod*|Current Period |InputType.number|FINANCE|
 |**110**|*docStatus*|Doc Status |InputType.select|CONTROL|
-|**120**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**120**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**130**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5070**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5080**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -543,17 +543,17 @@ Enter all the other fields and click on the save button to save the entitlement.
 
 | Sequence | Name                 | Label                    | InputType             | Field Group |
 | -------- | ------------------------ | ------------------------ | --------------------- | ----------- |
-|**10**|*vvLeaveType*| Leave Type |defferedSelect|CONTROL|
-|**10**|*vvLeaveGroup*| Leave Group |defferedSelect|DEFAULT|
+|**10**|*vvLeaveType*| Leave Type |deferredSelect|CONTROL|
+|**10**|*vvLeaveGroup*| Leave Group |deferredSelect|DEFAULT|
 |**20**|*vvLeaveCategory*| Leave Category |InputType.text|DEFAULT|
 |**30**|*hrLeaveEntitlementLineId*|Hr Leave Entitlement Line Id |InputType.text|REFERENCE|
-|**40**|*hrLeaveEntitlementHeaderId*|Hr Leave Entitlement Header Id |defferedSelect|REFERENCE|
-|**50**|*hrLeaveTypeId*|Hr Leave Type Id |defferedSelect|CONTROL|
+|**40**|*hrLeaveEntitlementHeaderId*|Hr Leave Entitlement Header Id |deferredSelect|REFERENCE|
+|**50**|*hrLeaveTypeId*|Hr Leave Type Id |deferredSelect|CONTROL|
 |**60**|*period*|Period |InputType.select|FINANCE|
 |**70**|*leavePerPeriod*|Leave Per Period |InputType.textField|FINANCE|
 |**80**|*defaultNoOfPeriod*|Default No Of Period |InputType.textField|PLANNING|
 |**130**|*docStatus*|Doc Status |InputType.select|CONTROL|
-|**140**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**140**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**150**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5090**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5100**|*creationDate*|Creation Date |InputType.text|REFERENCE|

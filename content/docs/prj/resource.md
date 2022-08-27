@@ -93,26 +93,26 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvOrgCode*| Org Code |defferedSelect|ENTITY|
-|**10**|*vvPrjProjectHeaderId*| Prj Project Header Id |defferedSelect|REFERENCE|
-|**20**|*vvProjectName*| Project Name |defferedSelect|DEFAULT|
-|**30**|*vvProjectNumber*| Project Number |defferedSelect|DATA|
-|**40**|*vvTaskOwner*| Task Owner |defferedSelect|DEFAULT|
-|**50**|*vvTaskLevel*| Task Level |defferedSelect|DEFAULT|
-|**60**|*vvTaskNumber*| Task Number |defferedSelect|DATA|
-|**70**|*vvTaskName*| Task Name |defferedSelect|DEFAULT|
+|**10**|*vvOrgCode*| Org Code |deferredSelect|ENTITY|
+|**10**|*vvPrjProjectHeaderId*| Prj Project Header Id |deferredSelect|REFERENCE|
+|**20**|*vvProjectName*| Project Name |deferredSelect|DEFAULT|
+|**30**|*vvProjectNumber*| Project Number |deferredSelect|DATA|
+|**40**|*vvTaskOwner*| Task Owner |deferredSelect|DEFAULT|
+|**50**|*vvTaskLevel*| Task Level |deferredSelect|DEFAULT|
+|**60**|*vvTaskNumber*| Task Number |deferredSelect|DATA|
+|**70**|*vvTaskName*| Task Name |deferredSelect|DEFAULT|
 |**80**|*vvActivitySequence*| Activity Sequence |InputType.text|DEFAULT|
-|**90**|*vvInvOrgId*| Inv Org Id |defferedSelect|REFERENCE|
+|**90**|*vvInvOrgId*| Inv Org Id |deferredSelect|REFERENCE|
 |**100**|*vvActivityDescription*| Activity Description |InputType.text|DEFAULT|
-|**110**|*vvMfgResource*| Mfg Resource |defferedSelect|DEFAULT|
+|**110**|*vvMfgResource*| Mfg Resource |deferredSelect|DEFAULT|
 |**120**|*vvResourceDescription*| Resource Description |InputType.text|DEFAULT|
 |**130**|*prjProjectActivityResId*|Prj Project Activity Res Id |InputType.text|REFERENCE|
-|**140**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**140**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**150**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**160**|*prjProjectActivityId*|Prj Project Activity Id |InputType.text|REFERENCE|
 |**170**|*resourceSequence*|Resource Sequence |InputType.number|DEFAULT|
 |**180**|*chargeBasis*|Charge Basis |InputType.select|DEFAULT|
-|**190**|*bomResourceId*|Bom Resource Id |defferedSelect|REFERENCE|
+|**190**|*bomResourceId*|Bom Resource Id |deferredSelect|REFERENCE|
 |**200**|*resourceUsage*|Resource Usage |InputType.textField|DEFAULT|
 |**210**|*resourceScheduledCb*|Resource Scheduled Cb |InputType.switchField|DEFAULT|
 |**220**|*requiredQuantity*|Required Quantity |InputType.textField|DATA|

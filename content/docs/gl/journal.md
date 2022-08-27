@@ -109,11 +109,11 @@ The doc status field shows the status of the journal and can be any of the below
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*glJournalHeaderId*|Gl Journal Header Id |InputType.text|REFERENCE|
-|**10**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**10**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**20**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**30**|*glLedgerId*|Gl Ledger Id |defferedSelect|REFERENCE|
+|**30**|*glLedgerId*|Gl Ledger Id |deferredSelect|REFERENCE|
 |**40**|*documentDate*|Document Date |InputType.dateTime|DATE|
-|**50**|*glPeriodId*|Gl Period Id |defferedSelect|REFERENCE|
+|**50**|*glPeriodId*|Gl Period Id |deferredSelect|REFERENCE|
 |**60**|*journalSource*|Journal Source |InputType.textField|DEFAULT|
 |**70**|*journalCategory*|Journal Category |InputType.textField|DEFAULT|
 |**80**|*journalName*|Journal Name |InputType.textField|DEFAULT|
@@ -121,7 +121,7 @@ The doc status field shows the status of the journal and can be any of the below
 |**100**|*balanceType*|Balance Type |InputType.select|CONTROL|
 |**110**|*postDate*|Post Date |InputType.dateTime|DATE|
 |**120**|*headerAmount*|Header Amount |InputType.textField|FINANCE|
-|**130**|*docCurrency*|Doc Currency |defferedSelect|FINANCE|
+|**130**|*docCurrency*|Doc Currency |deferredSelect|FINANCE|
 |**140**|*exchangeType*|Exchange Type |InputType.textField|CONTROL|
 |**150**|*exchangeDate*|Exchange Date |InputType.dateTime|DATE|
 |**160**|*exchangeRate*|Exchange Rate |InputType.textField|FINANCE|
@@ -186,23 +186,23 @@ The amount is a mandatory field, and the sum of all the debit amounts must be ab
 | Sequence | Name                | Label                    | InputType             | Field Group |
 | -------- | ------------------------ | ------------------------ | --------------------- | ----------- |
 |**10**|*glJournalLineId*|Gl Journal Line Id |InputType.text|REFERENCE|
-|**10**|*glJournalHeaderId*|Gl Journal Header Id |InputType.defferedSelect|REFERENCE|
-|**20**|*referenceEntityName*|Reference Entity Name |defferedSelect|REFERENCE|
+|**10**|*glJournalHeaderId*|Gl Journal Header Id |InputType.deferredSelect|REFERENCE|
+|**20**|*referenceEntityName*|Reference Entity Name |deferredSelect|REFERENCE|
 |**30**|*referenceKeyName*|Reference Key Name |InputType.text|REFERENCE|
 |**40**|*referenceKeyValue*|Reference Key Value |InputType.text|REFERENCE|
-|**50**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**50**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**60**|*srcEntityIdName*|Src Entity Id Name |InputType.text|REFERENCE|
 |**70**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**80**|*pSrcEntityName*|P Src Entity Name |defferedSelect|DEFAULT|
+|**80**|*pSrcEntityName*|P Src Entity Name |deferredSelect|DEFAULT|
 |**90**|*pSrcEntityIdName*|P Src Entity Id Name |InputType.text|REFERENCE|
 |**100**|*lineNum*|Line Num |InputType.number|DEFAULT|
 |**110**|*pSrcEntityId*|P Src Entity Id |InputType.text|REFERENCE|
-|**120**|*glAcId*|Gl Ac Id |defferedSelect|REFERENCE|
+|**120**|*glAcId*|Gl Ac Id |deferredSelect|REFERENCE|
 |**130**|*amount*|Amount |InputType.textField|FINANCE|
 |**140**|*drCr*|Dr Cr |InputType.select|DEFAULT|
-|**150**|*glLedgerId*|Gl Ledger Id |defferedSelect|REFERENCE|
-|**160**|*glPeriodId*|Gl Period Id |defferedSelect|REFERENCE|
-|**170**|*gSrcEntityName*|G Src Entity Name |defferedSelect|DEFAULT|
+|**150**|*glLedgerId*|Gl Ledger Id |deferredSelect|REFERENCE|
+|**160**|*glPeriodId*|Gl Period Id |deferredSelect|REFERENCE|
+|**170**|*gSrcEntityName*|G Src Entity Name |deferredSelect|DEFAULT|
 |**180**|*gSrcEntityIdName*|G Src Entity Id Name |InputType.text|REFERENCE|
 |**190**|*gSrcEntityId*|G Src Entity Id |InputType.text|REFERENCE|
 |**200**|*status*|Status |InputType.select|CONTROL|
@@ -210,7 +210,7 @@ The amount is a mandatory field, and the sum of all the debit amounts must be ab
 |**220**|*journalDescription*|Journal Description |InputType.textField|DEFAULT|
 |**230**|*referenceVersion*|Reference Version |InputType.text|REFERENCE|
 |**240**|*ledgerAmount*|Ledger Amount |InputType.textField|FINANCE|
-|**250**|*docCurrency*|Doc Currency |defferedSelect|FINANCE|
+|**250**|*docCurrency*|Doc Currency |deferredSelect|FINANCE|
 |**260**|*totalDocAmount*|Total Doc Amount |InputType.textField|FINANCE|
 |**270**|*journalDate*|Journal Date |InputType.dateTime|DATE|
 |**280**|*postDate*|Post Date |InputType.date|DATE|

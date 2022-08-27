@@ -94,41 +94,41 @@ The reference groups show various ids for reference only. You don't need to ente
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvTaskLevel*| Task Level |defferedSelect|DEFAULT|
-|**10**|*vvTaskNumber*| Task Number |defferedSelect|DATA|
-|**20**|*vvProjectName*| Project Name |defferedSelect|DEFAULT|
-|**30**|*vvProjectNumber*| Project Number |defferedSelect|DATA|
-|**40**|*vvBuOrgId*| Bu Org Id |defferedSelect|REFERENCE|
-|**50**|*vvTaskOwner*| Task Owner |defferedSelect|DEFAULT|
-|**60**|*vvParentTaskName*| Parent Task Name |defferedSelect|DEFAULT|
-|**70**|*vvParentTaskNumber*| Parent Task Number |defferedSelect|DATA|
-|**80**|*vvParentTaskDescription*| Parent Task Description |defferedSelect|DEFAULT|
+|**10**|*vvTaskLevel*| Task Level |deferredSelect|DEFAULT|
+|**10**|*vvTaskNumber*| Task Number |deferredSelect|DATA|
+|**20**|*vvProjectName*| Project Name |deferredSelect|DEFAULT|
+|**30**|*vvProjectNumber*| Project Number |deferredSelect|DATA|
+|**40**|*vvBuOrgId*| Bu Org Id |deferredSelect|REFERENCE|
+|**50**|*vvTaskOwner*| Task Owner |deferredSelect|DEFAULT|
+|**60**|*vvParentTaskName*| Parent Task Name |deferredSelect|DEFAULT|
+|**70**|*vvParentTaskNumber*| Parent Task Number |deferredSelect|DATA|
+|**80**|*vvParentTaskDescription*| Parent Task Description |deferredSelect|DEFAULT|
 |**90**|*vvLevel*| Level |InputType.text|DEFAULT|
 |**100**|*vvLevelDescription*| Level Description |InputType.text|DEFAULT|
 |**110**|*vvLevelName*| Level Name |InputType.text|DEFAULT|
 |**120**|*vvLevelUniqueCode*| Level Unique Code |InputType.text|DEFAULT|
 |**130**|*vvLevelParentUniqueCode*| Level Parent Unique Code |InputType.text|DEFAULT|
 |**140**|*prjProjectTaskId*|Prj Project Task Id |InputType.text|REFERENCE|
-|**150**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**150**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**160**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**170**|*prjProjectHeaderId*|Prj Project Header Id |defferedSelect|REFERENCE|
+|**170**|*prjProjectHeaderId*|Prj Project Header Id |deferredSelect|REFERENCE|
 |**180**|*taskLevel*|Task Level |InputType.number|DEFAULT|
 |**190**|*taskNumber*|Task Number |InputType.textField|DATA|
 |**200**|*taskName*|Task Name |InputType.textField|DEFAULT|
-|**210**|*parentPrjProjectTaskId*|Parent Prj Project Task Id |defferedSelect|REFERENCE|
+|**210**|*parentPrjProjectTaskId*|Parent Prj Project Task Id |deferredSelect|REFERENCE|
 |**220**|*completionPercentage*|Completion Percentage |InputType.textField|DEFAULT|
 |**230**|*description*|Description |InputType.textField|DEFAULT|
 |**240**|*startDate*|Start Date |InputType.date|DATE|
 |**250**|*endDate*|End Date |InputType.date|DATE|
 |**260**|*lineDescription*|Line Description |InputType.textField|DEFAULT|
 |**270**|*taskStatus*|Task Status |InputType.select|CONTROL|
-|**280**|*ownerEmployeeId*|Owner Employee Id |defferedSelect|REFERENCE|
+|**280**|*ownerEmployeeId*|Owner Employee Id |deferredSelect|REFERENCE|
 |**290**|*serviceType*|Service Type |InputType.textField|CONTROL|
 |**300**|*workType*|Work Type |InputType.textField|CONTROL|
 |**310**|*allowChargesCb*|Allow Charges Cb |InputType.switchField|DEFAULT|
 |**320**|*capitalizableCb*|Capitalizable Cb |InputType.switchField|DEFAULT|
 |**330**|*milestoneCb*|Milestone Cb |InputType.switchField|DEFAULT|
-|**340**|*docCurrency*|Doc Currency |defferedSelect|FINANCE|
+|**340**|*docCurrency*|Doc Currency |deferredSelect|FINANCE|
 |**350**|*rateType*|Rate Type |InputType.textField|CONTROL|
 |**360**|*cipAssetId*|Cip Asset Id |InputType.text|REFERENCE|
 |**410**|*docStatus*|Doc Status |InputType.select|CONTROL|

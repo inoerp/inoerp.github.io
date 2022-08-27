@@ -89,7 +89,7 @@ You can configure the application to show which fields should be shown under whi
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*approvalTableName*|Approval Table Name |InputType.textField|PLANNING|
-|**10**|*approvalEntityName*|Approval Entity Name |defferedSelect|DEFAULT|
+|**10**|*approvalEntityName*|Approval Entity Name |deferredSelect|DEFAULT|
 |**20**|*entityType*|Entity Type |InputType.select|CONTROL|
 
 </details>
@@ -163,16 +163,16 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvEmployeeName*| Employee Name |defferedSelect|ENTITY|
+|**10**|*vvEmployeeName*| Employee Name |deferredSelect|ENTITY|
 |**10**|*sysApprovalLimitId*|Sys Approval Limit Id |InputType.text|REFERENCE|
-|**20**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**20**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**30**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**40**|*approvalEntityName*|Approval Entity Name |defferedSelect|DEFAULT|
-|**50**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
+|**40**|*approvalEntityName*|Approval Entity Name |deferredSelect|DEFAULT|
+|**50**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
 |**60**|*isActiveCb*|Is Active Cb |InputType.switchField|DEFAULT|
-|**70**|*approvalControlElement*|Approval Control Element |defferedSelect|DEFAULT|
+|**70**|*approvalControlElement*|Approval Control Element |deferredSelect|DEFAULT|
 |**80**|*approvalControlValue*|Approval Control Value |InputType.textField|DEFAULT|
-|**90**|*approvalElementName*|Approval Element Name |defferedSelect|DEFAULT|
+|**90**|*approvalElementName*|Approval Element Name |deferredSelect|DEFAULT|
 |**100**|*approvalElementValue*|Approval Element Value |InputType.textField|DEFAULT|
 |**110**|*description*|Description |InputType.textField|DEFAULT|
 |**5120**|*createdBy*|Created By |InputType.text|REFERENCE|
@@ -249,10 +249,10 @@ You can configure the application to show which fields should be shown under whi
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*sysApprovalGroupId*|Sys Approval Group Id |InputType.text|REFERENCE|
-|**10**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**10**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**20**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**30**|*groupName*|Group Name |InputType.textField|DEFAULT|
-|**40**|*parentSysApprovalGroupId*|Parent Sys Approval Group Id |defferedSelect|REFERENCE|
+|**40**|*parentSysApprovalGroupId*|Parent Sys Approval Group Id |deferredSelect|REFERENCE|
 |**50**|*isActiveCb*|Is Active Cb |InputType.switchField|DEFAULT|
 |**60**|*description*|Description |InputType.textField|DEFAULT|
 |**5070**|*createdBy*|Created By |InputType.text|REFERENCE|
@@ -312,12 +312,12 @@ Enter all the other fields and click on the save button to save the approval gro
 
 | Sequence | Name                 | Label                    | InputType             | Field Group |
 | -------- | ------------------------ | ------------------------ | --------------------- | ----------- |
-|**10**|*vvEmployeeName*| Employee Name |defferedSelect|ENTITY|
+|**10**|*vvEmployeeName*| Employee Name |deferredSelect|ENTITY|
 |**10**|*sysApprovalGroupMemberId*|Sys Approval Group Member Id |InputType.text|REFERENCE|
-|**20**|*sysApprovalGroupId*|Sys Approval Group Id |defferedSelect|REFERENCE|
-|**30**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**20**|*sysApprovalGroupId*|Sys Approval Group Id |deferredSelect|REFERENCE|
+|**30**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**40**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**50**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
+|**50**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
 |**60**|*isActiveCb*|Is Active Cb |InputType.switchField|DEFAULT|
 |**70**|*description*|Description |InputType.textField|DEFAULT|
 |**5080**|*createdBy*|Created By |InputType.text|REFERENCE|
@@ -396,19 +396,19 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvBuOrg*| Bu Org |defferedSelect|ENTITY|
-|**10**|*vvBuOrgCode*| Bu Org Code |defferedSelect|ENTITY|
-|**20**|*vvLegalOrgName*| Legal Org Name |defferedSelect|ENTITY|
-|**30**|*vvLegalOrgCode*| Legal Org Code |defferedSelect|ENTITY|
-|**40**|*vvApprovalGroupName*| Approval Group Name |defferedSelect|DEFAULT|
+|**10**|*vvBuOrg*| Bu Org |deferredSelect|ENTITY|
+|**10**|*vvBuOrgCode*| Bu Org Code |deferredSelect|ENTITY|
+|**20**|*vvLegalOrgName*| Legal Org Name |deferredSelect|ENTITY|
+|**30**|*vvLegalOrgCode*| Legal Org Code |deferredSelect|ENTITY|
+|**40**|*vvApprovalGroupName*| Approval Group Name |deferredSelect|DEFAULT|
 |**50**|*sysApprovalAssignmentId*|Sys Approval Assignment Id |InputType.text|REFERENCE|
-|**60**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**60**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**70**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**80**|*approvalEntityName*|Approval Entity Name |defferedSelect|DEFAULT|
-|**90**|*sysApprovalGroupId*|Sys Approval Group Id |defferedSelect|REFERENCE|
+|**80**|*approvalEntityName*|Approval Entity Name |deferredSelect|DEFAULT|
+|**90**|*sysApprovalGroupId*|Sys Approval Group Id |deferredSelect|REFERENCE|
 |**100**|*isActiveCb*|Is Active Cb |InputType.switchField|DEFAULT|
-|**110**|*buOrgId*|Bu Org Id |defferedSelect|REFERENCE|
-|**120**|*leOrgId*|Le Org Id |defferedSelect|REFERENCE|
+|**110**|*buOrgId*|Bu Org Id |deferredSelect|REFERENCE|
+|**120**|*leOrgId*|Le Org Id |deferredSelect|REFERENCE|
 |**130**|*approvalType*|Approval Type |InputType.select|CONTROL|
 |**140**|*description*|Description |InputType.textField|DEFAULT|
 |**5150**|*createdBy*|Created By |InputType.text|REFERENCE|
@@ -493,13 +493,13 @@ You can configure the application to show which fields should be shown under whi
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*sysNotificationId*|Sys Notification Id |InputType.text|REFERENCE|
-|**10**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**10**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**20**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**30**|*notificationType*|Notification Type |InputType.select|CONTROL|
 |**40**|*notificationName*|Notification Name |InputType.textField|DEFAULT|
 |**50**|*fromEmployee*|From Employee |InputType.textField|ENTITY|
 |**60**|*notificationSubject*|Notification Subject |InputType.textField|DEFAULT|
-|**70**|*refEntityName*|Ref Entity Name |defferedSelect|DEFAULT|
+|**70**|*refEntityName*|Ref Entity Name |deferredSelect|DEFAULT|
 |**80**|*refKeyName*|Ref Key Name |InputType.textField|DEFAULT|
 |**90**|*refKeyValue*|Ref Key Value |InputType.textField|DEFAULT|
 |**100**|*refTableName*|Ref Table Name |InputType.textField|DEFAULT|
@@ -514,8 +514,8 @@ You can configure the application to show which fields should be shown under whi
 |**190**|*userKeyValue*|User Key Value |InputType.textField|DEFAULT|
 |**200**|*textField1*|Text Field 1|InputType.textField|DEFAULT|
 |**210**|*status*|Status |InputType.textField|CONTROL|
-|**220**|*sysApprovalGroupId*|Sys Approval Group Id |defferedSelect|REFERENCE|
-|**230**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
+|**220**|*sysApprovalGroupId*|Sys Approval Group Id |deferredSelect|REFERENCE|
+|**230**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
 |**240**|*notificationStatus*|Notification Status |InputType.select|CONTROL|
 |**250**|*receiverType*|Receiver Type |InputType.select|CONTROL|
 |**5260**|*createdBy*|Created By |InputType.text|REFERENCE|

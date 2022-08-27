@@ -106,17 +106,17 @@ You can configure the application to show which fields should be shown under whi
 |**20**|*resourceCost*|Resource Cost |InputType.textField|cost|
 |**30**|*miscExpenditure*|Misc Expenditure |InputType.textField|cost|
 |**40**|*prjProjectHeaderId*|Prj Project Header Id |InputType.text|REFERENCE|
-|**50**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**50**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**60**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**70**|*projectSource*|Project Source |InputType.textField|DEFAULT|
-|**80**|*projectName*|Project Name |defferedSelect|DEFAULT|
-|**90**|*buOrgId*|Bu Org Id |defferedSelect|REFERENCE|
+|**80**|*projectName*|Project Name |deferredSelect|DEFAULT|
+|**90**|*buOrgId*|Bu Org Id |deferredSelect|REFERENCE|
 |**100**|*prjProjectType*|Prj Project Type |InputType.select|CONTROL|
 |**110**|*projectClass*|Project Class |InputType.textField|DEFAULT|
-|**120**|*projectNumber*|Project Number |defferedSelect|DATA|
-|**130**|*arCustomerId*|Ar Customer Id |defferedSelect|REFERENCE|
-|**140**|*arCustomerSiteId*|Ar Customer Site Id |defferedSelect|REFERENCE|
-|**150**|*pmEmployeeId*|Pm Employee Id |defferedSelect|REFERENCE|
+|**120**|*projectNumber*|Project Number |deferredSelect|DATA|
+|**130**|*arCustomerId*|Ar Customer Id |deferredSelect|REFERENCE|
+|**140**|*arCustomerSiteId*|Ar Customer Site Id |deferredSelect|REFERENCE|
+|**150**|*pmEmployeeId*|Pm Employee Id |deferredSelect|REFERENCE|
 |**160**|*projectStatus*|Project Status |InputType.select|CONTROL|
 |**170**|*approvalStatus*|Approval Status |InputType.text|CONTROL|
 |**180**|*description*|Description |InputType.textField|DEFAULT|
@@ -133,8 +133,8 @@ You can configure the application to show which fields should be shown under whi
 |**290**|*roleListId*|Role List Id |InputType.text|REFERENCE|
 |**300**|*prjWorkType*|Prj Work Type |InputType.number|CONTROL|
 |**310**|*probability*|Probability |InputType.textField|DEFAULT|
-|**320**|*docCurrency*|Doc Currency |defferedSelect|FINANCE|
-|**330**|*exchangeRateType*|Exchange Rate Type |defferedSelect|CONTROL|
+|**320**|*docCurrency*|Doc Currency |deferredSelect|FINANCE|
+|**330**|*exchangeRateType*|Exchange Rate Type |deferredSelect|CONTROL|
 |**340**|*exchangeRate*|Exchange Rate |InputType.textField|FINANCE|
 |**350**|*opportunityValue*|Opportunity Value |InputType.textField|DEFAULT|
 |**360**|*expectedApprovalDate*|Expected Approval Date |InputType.date|DATE|
@@ -147,7 +147,7 @@ You can configure the application to show which fields should be shown under whi
 |**430**|*revEnabledCb*|Rev Enabled Cb |InputType.switchField|DEFAULT|
 |**440**|*revNumber*|Rev Number |InputType.number|DATA|
 |**490**|*docStatus*|Doc Status |InputType.text|CONTROL|
-|**500**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |defferedSelect|REFERENCE|
+|**500**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |deferredSelect|REFERENCE|
 |**5450**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5460**|*creationDate*|Creation Date |InputType.text|REFERENCE|
 |**5470**|*lastUpdatedBy*|Last Updated By |InputType.text|REFERENCE|
@@ -292,12 +292,12 @@ You can configure the application to show which fields should be shown under whi
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*hrExpenditureHeaderId*|Hr Expenditure Header Id |InputType.text|REFERENCE|
-|**10**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
+|**10**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
 |**20**|*Description*|Claim Description |InputType.textField|DEFAULT|
 |**30**|*detailDescription*|Detail Description |InputType.textField|DEFAULT|
 |**40**|*Number*|Claim Number |InputType.textField|DATA|
 |**50**|*approvalStatus*|Approval Status |InputType.text|CONTROL|
-|**60**|*exchangeRateType*|Exchange Rate Type |defferedSelect|CONTROL|
+|**60**|*exchangeRateType*|Exchange Rate Type |deferredSelect|CONTROL|
 |**70**|*exchangeRate*|Exchange Rate |InputType.textField|FINANCE|
 |**80**|*departmentId*|Department Id |InputType.text|REFERENCE|
 |**90**|*Date*|Claim Date |InputType.date|DATE|
@@ -306,13 +306,13 @@ You can configure the application to show which fields should be shown under whi
 |**120**|*approvedByEmployeeId*|Approved By Employee Id |InputType.text|REFERENCE|
 |**130**|*purpose*|Purpose |InputType.textField|DEFAULT|
 |**140**|*expenditureTemplateId*|Expenditure Template Id |InputType.text|REFERENCE|
-|**150**|*currency*|Currency |defferedSelect|FINANCE|
-|**160**|*docCurrency*|Doc Currency |defferedSelect|FINANCE|
+|**150**|*currency*|Currency |deferredSelect|FINANCE|
+|**160**|*docCurrency*|Doc Currency |deferredSelect|FINANCE|
 |**170**|*headerAmount*|Header Amount |InputType.textField|FINANCE|
 |**180**|*reason*|Reason |InputType.text|REFERENCE|
 |**190**|*contactDetails*|Contact Details |InputType.textField|DEFAULT|
-|**240**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |defferedSelect|REFERENCE|
-|**250**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**240**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |deferredSelect|REFERENCE|
+|**250**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**260**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5200**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5210**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -373,7 +373,7 @@ Enter all the other fields and click on the save button to save the expenditure.
 |**40**|*Amount*|Claim Amount |InputType.textField|FINANCE|
 |**50**|*purpose*|Purpose |InputType.textField|DEFAULT|
 |**60**|*receiptAmount*|Receipt Amount |InputType.textField|PLANNING|
-|**70**|*receiptCurrency*|Receipt Currency |defferedSelect|PLANNING|
+|**70**|*receiptCurrency*|Receipt Currency |deferredSelect|PLANNING|
 |**80**|*expenditureType*|Expenditure Type |InputType.textField|CONTROL|
 |**90**|*startDate*|Start Date |InputType.date|DATE|
 |**100**|*dailyRate*|Daily Rate |InputType.textField|FINANCE|
@@ -385,7 +385,7 @@ Enter all the other fields and click on the save button to save the expenditure.
 |**160**|*exchangeRate*|Exchange Rate |InputType.textField|FINANCE|
 |**170**|*perDiemRate*|Per Diem Rate |InputType.textField|FINANCE|
 |**180**|*perDiemDays*|Per Diem Days |InputType.textField|DEFAULT|
-|**190**|*mileageUomId*|Mileage Uom Id |defferedSelect|REFERENCE|
+|**190**|*mileageUomId*|Mileage Uom Id |deferredSelect|REFERENCE|
 |**200**|*mileageDistance*|Mileage Distance |InputType.textField|DEFAULT|
 |**210**|*mileageRate*|Mileage Rate |InputType.textField|FINANCE|
 |**220**|*ccTransactionId*|Cc Transaction Id |InputType.text|REFERENCE|
@@ -393,7 +393,7 @@ Enter all the other fields and click on the save button to save the expenditure.
 |**240**|*ccAge*|Cc Age |InputType.number|DEFAULT|
 |**250**|*ccTransactionAmount*|Cc Transaction Amount |InputType.textField|FINANCE|
 |**300**|*docStatus*|Doc Status |InputType.select|CONTROL|
-|**310**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**310**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**320**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5260**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5270**|*creationDate*|Creation Date |InputType.text|REFERENCE|

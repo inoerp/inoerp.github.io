@@ -95,27 +95,27 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvOrgCode*| Org Code |defferedSelect|ENTITY|
-|**10**|*vvPrjProjectHeaderId*| Prj Project Header Id |defferedSelect|REFERENCE|
-|**20**|*vvPrjProjectTaskId*| Prj Project Task Id |defferedSelect|REFERENCE|
-|**30**|*vvProjectName*| Project Name |defferedSelect|DEFAULT|
-|**40**|*vvProjectNumber*| Project Number |defferedSelect|DATA|
-|**50**|*vvTaskOwner*| Task Owner |defferedSelect|DEFAULT|
-|**60**|*vvTaskLevel*| Task Level |defferedSelect|DEFAULT|
-|**70**|*vvTaskNumber*| Task Number |defferedSelect|DATA|
-|**80**|*vvTaskName*| Task Name |defferedSelect|DEFAULT|
+|**10**|*vvOrgCode*| Org Code |deferredSelect|ENTITY|
+|**10**|*vvPrjProjectHeaderId*| Prj Project Header Id |deferredSelect|REFERENCE|
+|**20**|*vvPrjProjectTaskId*| Prj Project Task Id |deferredSelect|REFERENCE|
+|**30**|*vvProjectName*| Project Name |deferredSelect|DEFAULT|
+|**40**|*vvProjectNumber*| Project Number |deferredSelect|DATA|
+|**50**|*vvTaskOwner*| Task Owner |deferredSelect|DEFAULT|
+|**60**|*vvTaskLevel*| Task Level |deferredSelect|DEFAULT|
+|**70**|*vvTaskNumber*| Task Number |deferredSelect|DATA|
+|**80**|*vvTaskName*| Task Name |deferredSelect|DEFAULT|
 |**90**|*vvActivitySequence*| Activity Sequence |InputType.text|DEFAULT|
-|**100**|*vvInvOrgId*| Inv Org Id |defferedSelect|REFERENCE|
+|**100**|*vvInvOrgId*| Inv Org Id |deferredSelect|REFERENCE|
 |**110**|*vvActivityDescription*| Activity Description |InputType.text|DEFAULT|
-|**120**|*vvComponentItemNumber*| Component Item Number |defferedSelect|DEFAULT|
-|**130**|*vvUomCode*| Uom Code |defferedSelect|DEFAULT|
-|**140**|*vvComponentItemDescription*| Component Item Description |defferedSelect|DEFAULT|
+|**120**|*vvComponentItemNumber*| Component Item Number |deferredSelect|DEFAULT|
+|**130**|*vvUomCode*| Uom Code |deferredSelect|DEFAULT|
+|**140**|*vvComponentItemDescription*| Component Item Description |deferredSelect|DEFAULT|
 |**150**|*prjProjectActivityMatId*|Prj Project Activity Mat Id |InputType.text|REFERENCE|
-|**160**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**160**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**170**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**180**|*prjProjectActivityId*|Prj Project Activity Id |InputType.text|REFERENCE|
 |**190**|*itemSequence*|Item Sequence |InputType.number|DEFAULT|
-|**200**|*componentItemIdM*|Component Item Id M |defferedSelect|REFERENCE|
+|**200**|*componentItemIdM*|Component Item Id M |deferredSelect|REFERENCE|
 |**210**|*componentRevision*|Component Revision |InputType.textField|DEFAULT|
 |**220**|*usageBasis*|Usage Basis |InputType.textField|DEFAULT|
 |**230**|*usageQuantity*|Usage Quantity |InputType.textField|DATA|
@@ -123,8 +123,8 @@ You can configure the application to show which fields should be shown under whi
 |**250**|*planningPercentage*|Planning Percentage |InputType.textField|PLANNING|
 |**260**|*yield*|Yield |InputType.textField|DEFAULT|
 |**270**|*wipSupplyType*|Wip Supply Type |InputType.select|CONTROL|
-|**280**|*supplySubInventory*|Supply Sub Inventory |defferedSelect|PLANNING|
-|**290**|*supplyLocatorId*|Supply Locator Id |defferedSelect|PLANNING|
+|**280**|*supplySubInventory*|Supply Sub Inventory |deferredSelect|PLANNING|
+|**290**|*supplyLocatorId*|Supply Locator Id |deferredSelect|PLANNING|
 |**300**|*requiredQuantity*|Required Quantity |InputType.number|DATA|
 |**310**|*issuedQuantity*|Issued Quantity |InputType.number|DATA|
 |**5320**|*createdBy*|Created By |InputType.text|REFERENCE|

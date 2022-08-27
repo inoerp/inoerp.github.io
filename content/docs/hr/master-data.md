@@ -92,14 +92,14 @@ You can configure the application to show which fields should be shown under whi
 |**90**|*skillset*|Skillset |InputType.textField|DEFAULT|
 |**100**|*positionType*|Position Type |InputType.select|CONTROL|
 |**110**|*jobUsage*|Job Usage |InputType.textField|DEFAULT|
-|**120**|*groupHrJobId*|Group Hr Job Id |defferedSelect|REFERENCE|
+|**120**|*groupHrJobId*|Group Hr Job Id |deferredSelect|REFERENCE|
 |**130**|*functionalArea*|Functional Area |InputType.textField|DEFAULT|
 |**140**|*location*|Location |InputType.textField|ENTITY|
 |**150**|*jobLevel*|Job Level |InputType.number|DEFAULT|
 |**160**|*status*|Status |InputType.textField|CONTROL|
 |**170**|*jobDetails*|Job Details |InputType.textField|DEFAULT|
 |**180**|*primaryResponsibility*|Primary Responsibility |InputType.textField|DEFAULT|
-|**230**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**230**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**240**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5190**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5200**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -184,14 +184,14 @@ You can configure the application to show which fields should be shown under whi
 |**10**|*hrGradeId*|Hr Grade Id |InputType.text|REFERENCE|
 |**10**|*grade*|Grade |InputType.textField|DEFAULT|
 |**20**|*gradeRank*|Grade Rank |InputType.number|DEFAULT|
-|**30**|*hrCompensationHeaderId*|Hr Compensation Header Id |defferedSelect|REFERENCE|
-|**40**|*hrLeaveEntitlementHeaderId*|Hr Leave Entitlement Header Id |defferedSelect|REFERENCE|
+|**30**|*hrCompensationHeaderId*|Hr Compensation Header Id |deferredSelect|REFERENCE|
+|**40**|*hrLeaveEntitlementHeaderId*|Hr Leave Entitlement Header Id |deferredSelect|REFERENCE|
 |**50**|*description*|Description |InputType.textField|DEFAULT|
-|**60**|*hrPayrollId*|Hr Payroll Id |defferedSelect|REFERENCE|
+|**60**|*hrPayrollId*|Hr Payroll Id |deferredSelect|REFERENCE|
 |**70**|*inactiveDate*|Inactive Date |InputType.date|DATE|
 |**80**|*altName*|Alt Name |InputType.textField|PLANNING|
 |**90**|*altDescription*|Alt Description |InputType.textField|PLANNING|
-|**140**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**140**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**150**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5100**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5110**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -283,11 +283,11 @@ You can configure the application to show which fields should be shown under whi
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*hrPositionId*|Hr Position Id |InputType.text|REFERENCE|
 |**10**|*positionName*|Position Name |InputType.textField|DEFAULT|
-|**20**|*hrJobId*|Hr Job Id |defferedSelect|REFERENCE|
-|**30**|*hrGradeId*|Hr Grade Id |defferedSelect|REFERENCE|
-|**40**|*hrPayrollId*|Hr Payroll Id |defferedSelect|REFERENCE|
-|**50**|*hrCompensationHeaderId*|Hr Compensation Header Id |defferedSelect|REFERENCE|
-|**60**|*hrLeaveEntitlementHeaderId*|Hr Leave Entitlement Header Id |defferedSelect|REFERENCE|
+|**20**|*hrJobId*|Hr Job Id |deferredSelect|REFERENCE|
+|**30**|*hrGradeId*|Hr Grade Id |deferredSelect|REFERENCE|
+|**40**|*hrPayrollId*|Hr Payroll Id |deferredSelect|REFERENCE|
+|**50**|*hrCompensationHeaderId*|Hr Compensation Header Id |deferredSelect|REFERENCE|
+|**60**|*hrLeaveEntitlementHeaderId*|Hr Leave Entitlement Header Id |deferredSelect|REFERENCE|
 |**70**|*description*|Description |InputType.textField|DEFAULT|
 |**80**|*startDate*|Start Date |InputType.date|DATE|
 |**90**|*endDate*|End Date |InputType.date|DATE|
@@ -297,7 +297,7 @@ You can configure the application to show which fields should be shown under whi
 |**130**|*whFrequency*|Wh Frequency |InputType.textField|DEFAULT|
 |**140**|*positionDetails*|Position Details |InputType.textField|DEFAULT|
 |**150**|*positionStatus*|Position Status |InputType.textField|CONTROL|
-|**200**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**200**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**210**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5160**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5170**|*creationDate*|Creation Date |InputType.text|REFERENCE|

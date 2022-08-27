@@ -90,30 +90,30 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvOrgCode*| Org Code |defferedSelect|ENTITY|
-|**10**|*vvTaskLevel*| Task Level |defferedSelect|DEFAULT|
-|**20**|*vvTaskName*| Task Name |defferedSelect|DEFAULT|
-|**30**|*vvTaskNumber*| Task Number |defferedSelect|DATA|
-|**40**|*vvProjectName*| Project Name |defferedSelect|DEFAULT|
-|**50**|*vvProjectNumber*| Project Number |defferedSelect|DATA|
-|**60**|*vvBuOrgId*| Bu Org Id |defferedSelect|REFERENCE|
-|**70**|*vvTaskOwner*| Task Owner |defferedSelect|DEFAULT|
-|**80**|*vvParentTaskName*| Parent Task Name |defferedSelect|DEFAULT|
-|**90**|*vvParentTaskNumber*| Parent Task Number |defferedSelect|DATA|
-|**100**|*vvParentTaskDescription*| Parent Task Description |defferedSelect|DEFAULT|
+|**10**|*vvOrgCode*| Org Code |deferredSelect|ENTITY|
+|**10**|*vvTaskLevel*| Task Level |deferredSelect|DEFAULT|
+|**20**|*vvTaskName*| Task Name |deferredSelect|DEFAULT|
+|**30**|*vvTaskNumber*| Task Number |deferredSelect|DATA|
+|**40**|*vvProjectName*| Project Name |deferredSelect|DEFAULT|
+|**50**|*vvProjectNumber*| Project Number |deferredSelect|DATA|
+|**60**|*vvBuOrgId*| Bu Org Id |deferredSelect|REFERENCE|
+|**70**|*vvTaskOwner*| Task Owner |deferredSelect|DEFAULT|
+|**80**|*vvParentTaskName*| Parent Task Name |deferredSelect|DEFAULT|
+|**90**|*vvParentTaskNumber*| Parent Task Number |deferredSelect|DATA|
+|**100**|*vvParentTaskDescription*| Parent Task Description |deferredSelect|DEFAULT|
 |**110**|*vvLevel*| Level |InputType.text|DEFAULT|
 |**120**|*vvLevelDescription*| Level Description |InputType.text|DEFAULT|
 |**130**|*vvLevelName*| Level Name |InputType.text|DEFAULT|
 |**140**|*vvLevelUniqueCode*| Level Unique Code |InputType.text|DEFAULT|
 |**150**|*vvLevelParentUniqueCode*| Level Parent Unique Code |InputType.text|DEFAULT|
-|**160**|*vvPrjProjectHeaderId*| Prj Project Header Id |defferedSelect|REFERENCE|
+|**160**|*vvPrjProjectHeaderId*| Prj Project Header Id |deferredSelect|REFERENCE|
 |**170**|*prjProjectActivityId*|Prj Project Activity Id |InputType.text|REFERENCE|
-|**180**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**180**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**190**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**200**|*prjProjecTmpTaskId*|Prj Projec Tmp Task Id |InputType.text|REFERENCE|
-|**210**|*prjProjectTaskId*|Prj Project Task Id |defferedSelect|REFERENCE|
+|**210**|*prjProjectTaskId*|Prj Project Task Id |deferredSelect|REFERENCE|
 |**220**|*activitySequence*|Activity Sequence |InputType.number|DEFAULT|
-|**230**|*invOrgId*|Inv Org Id |defferedSelect|REFERENCE|
+|**230**|*invOrgId*|Inv Org Id |deferredSelect|REFERENCE|
 |**240**|*standardActivityId*|Standard Activity Id |InputType.text|REFERENCE|
 |**250**|*departmentId*|Department Id |InputType.text|REFERENCE|
 |**260**|*activityDescription*|Activity Description |InputType.textField|DEFAULT|

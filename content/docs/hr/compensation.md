@@ -94,7 +94,7 @@ You can configure the application to show which fields should be shown under whi
 |**20**|*revisionNumber*|Revision Number |InputType.number|DATA|
 |**30**|*description*|Description |InputType.textField|DEFAULT|
 |**80**|*docStatus*|Doc Status |InputType.select|CONTROL|
-|**90**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**90**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**100**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5040**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5050**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -165,16 +165,16 @@ Enter all the other fields and click on the save button to save the compensation
 
 | Sequence | Name                 | Label                    | InputType             | Field Group |
 | -------- | ------------------------ | ------------------------ | --------------------- | ----------- |
-|**10**|*vvCompElementName*| Comp Element Name |defferedSelect|DEFAULT|
-|**10**|*vvCompElementCode*| Comp Element Code |defferedSelect|DEFAULT|
-|**20**|*vvCompElementType*| Comp Element Type |defferedSelect|CONTROL|
+|**10**|*vvCompElementName*| Comp Element Name |deferredSelect|DEFAULT|
+|**10**|*vvCompElementCode*| Comp Element Code |deferredSelect|DEFAULT|
+|**20**|*vvCompElementType*| Comp Element Type |deferredSelect|CONTROL|
 |**30**|*vvStartDate*| Start Date |InputType.text|DATE|
 |**40**|*hrCompensationLineId*|Hr Compensation Line Id |InputType.text|REFERENCE|
-|**50**|*hrCompensationHeaderId*|Hr Compensation Header Id |defferedSelect|REFERENCE|
-|**60**|*hrCompensationElementId*|Hr Compensation Element Id |defferedSelect|REFERENCE|
+|**50**|*hrCompensationHeaderId*|Hr Compensation Header Id |deferredSelect|REFERENCE|
+|**60**|*hrCompensationElementId*|Hr Compensation Element Id |deferredSelect|REFERENCE|
 |**70**|*elementValue*|Element Value |InputType.textField|DEFAULT|
 |**80**|*description*|Description |InputType.textField|DEFAULT|
-|**130**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**130**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**140**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5090**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5100**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -276,7 +276,7 @@ You can configure the application to show which fields should be shown under whi
 |**140**|*standardLinkCb*|Standard Link Cb |InputType.text|REFERENCE|
 |**150**|*deductionStartRule*|Deduction Start Rule |InputType.textField|DEFAULT|
 |**160**|*status*|Status |InputType.textField|CONTROL|
-|**210**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**210**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**220**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5170**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5180**|*creationDate*|Creation Date |InputType.text|REFERENCE|

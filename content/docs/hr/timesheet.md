@@ -79,12 +79,12 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                   | Label                   | InputType           | Field Group |
 | -------- | ---------------------- | ----------------------- | ------------------- | ----------- |
-|**10**|*vvEmployeeName*| Employee Name |defferedSelect|ENTITY|
-|**10**|*vvActivityType*| Activity Type |defferedSelect|CONTROL|
+|**10**|*vvEmployeeName*| Employee Name |deferredSelect|ENTITY|
+|**10**|*vvActivityType*| Activity Type |deferredSelect|CONTROL|
 |**20**|*hrTimesheetEntryId*|Hr Timesheet Entry Id |InputType.text|REFERENCE|
-|**30**|*hrEmployeeId*|Hr Employee Id |defferedSelect|REFERENCE|
+|**30**|*hrEmployeeId*|Hr Employee Id |deferredSelect|REFERENCE|
 |**40**|*workDate*|Work Date |InputType.date|DATE|
-|**50**|*hrActivityTypeId*|Hr Activity Type Id |defferedSelect|CONTROL|
+|**50**|*hrActivityTypeId*|Hr Activity Type Id |deferredSelect|CONTROL|
 |**60**|*prjWorkTypeId*|Prj Work Type Id |InputType.number|CONTROL|
 |**70**|*hour*|Hour |InputType.textField|DEFAULT|
 |**80**|*approvalStatus*|Approval Status |InputType.select|CONTROL|

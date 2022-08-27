@@ -79,14 +79,14 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvProjectName*| Project Name |defferedSelect|DEFAULT|
-|**10**|*vvProjectNumber*| Project Number |defferedSelect|DATA|
+|**10**|*vvProjectName*| Project Name |deferredSelect|DEFAULT|
+|**10**|*vvProjectNumber*| Project Number |deferredSelect|DATA|
 |**20**|*vvTotalCost*| Total Cost |InputType.text|FINANCE|
 |**30**|*prjBudgetHeaderId*|Prj Budget Header Id |InputType.text|REFERENCE|
-|**40**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**40**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**50**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**60**|*prjProjectHeaderId*|Prj Project Header Id |defferedSelect|REFERENCE|
-|**70**|*prjProjectTaskId*|Prj Project Task Id |defferedSelect|REFERENCE|
+|**60**|*prjProjectHeaderId*|Prj Project Header Id |deferredSelect|REFERENCE|
+|**70**|*prjProjectTaskId*|Prj Project Task Id |deferredSelect|REFERENCE|
 |**80**|*versionNumber*|Version Number |InputType.number|DATA|
 |**90**|*versionName*|Version Name |InputType.textField|DEFAULT|
 |**100**|*versionType*|Version Type |InputType.select|CONTROL|
@@ -161,26 +161,26 @@ Enter all the other fields and click on the save button to save the budget. The 
 
 | Sequence | Name                 | Label                    | InputType             | Field Group |
 | -------- | ------------------------ | ------------------------ | --------------------- | ----------- |
-|**10**|*vvInvOrgId*| Inv Org Id |defferedSelect|REFERENCE|
-|**10**|*vvOrgCode*| Org Code |defferedSelect|ENTITY|
-|**20**|*vvTaskName*| Task Name |defferedSelect|DEFAULT|
-|**30**|*vvTaskNumber*| Task Number |defferedSelect|DATA|
-|**40**|*vvProjectName*| Project Name |defferedSelect|DEFAULT|
-|**50**|*vvProjectNumber*| Project Number |defferedSelect|DATA|
-|**60**|*vvComponentItemNumber*| Component Item Number |defferedSelect|DEFAULT|
-|**70**|*vvUomCode*| Uom Code |defferedSelect|DEFAULT|
-|**80**|*vvComponentItemDescription*| Component Item Description |defferedSelect|DEFAULT|
-|**90**|*vvResourceName*| Resource Name |defferedSelect|DEFAULT|
-|**100**|*vvResourceDescription*| Resource Description |defferedSelect|DEFAULT|
+|**10**|*vvInvOrgId*| Inv Org Id |deferredSelect|REFERENCE|
+|**10**|*vvOrgCode*| Org Code |deferredSelect|ENTITY|
+|**20**|*vvTaskName*| Task Name |deferredSelect|DEFAULT|
+|**30**|*vvTaskNumber*| Task Number |deferredSelect|DATA|
+|**40**|*vvProjectName*| Project Name |deferredSelect|DEFAULT|
+|**50**|*vvProjectNumber*| Project Number |deferredSelect|DATA|
+|**60**|*vvComponentItemNumber*| Component Item Number |deferredSelect|DEFAULT|
+|**70**|*vvUomCode*| Uom Code |deferredSelect|DEFAULT|
+|**80**|*vvComponentItemDescription*| Component Item Description |deferredSelect|DEFAULT|
+|**90**|*vvResourceName*| Resource Name |deferredSelect|DEFAULT|
+|**100**|*vvResourceDescription*| Resource Description |deferredSelect|DEFAULT|
 |**110**|*prjBudgetLineId*|Prj Budget Line Id |InputType.text|REFERENCE|
-|**120**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**120**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**130**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**140**|*prjBudgetHeaderId*|Prj Budget Header Id |InputType.text|REFERENCE|
 |**150**|*description*|Description |InputType.textField|DEFAULT|
-|**160**|*prjProjectActivityId*|Prj Project Activity Id |defferedSelect|REFERENCE|
-|**170**|*componentItemIdM*|Component Item Id M |defferedSelect|REFERENCE|
+|**160**|*prjProjectActivityId*|Prj Project Activity Id |deferredSelect|REFERENCE|
+|**170**|*componentItemIdM*|Component Item Id M |deferredSelect|REFERENCE|
 |**180**|*hrResourceId*|Hr Resource Id |InputType.text|REFERENCE|
-|**190**|*uomCode*|Uom Code |defferedSelect|DEFAULT|
+|**190**|*uomCode*|Uom Code |deferredSelect|DEFAULT|
 |**200**|*quantity*|Quantity |InputType.textField|DATA|
 |**210**|*rawCost*|Raw Cost |InputType.textField|FINANCE|
 |**220**|*revenueQuantity*|Revenue Quantity |InputType.textField|DATA|

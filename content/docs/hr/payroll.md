@@ -82,7 +82,7 @@ You can configure the application to show which fields should be shown under whi
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
 |**10**|*hrPayrollCalendarId*|Hr Payroll Calendar Id |InputType.text|REFERENCE|
-|**10**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**10**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**20**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**30**|*calendarName*|Calendar Name |InputType.textField|DEFAULT|
 |**40**|*calendarType*|Calendar Type |InputType.select|CONTROL|
@@ -148,15 +148,15 @@ Enter all the other fields and click on the save button to save the payroll cale
 | Sequence | Name                 | Label                    | InputType             | Field Group |
 | -------- | ------------------------ | ------------------------ | --------------------- | ----------- |
 |**10**|*hrPayrollCalendarPeriodId*|Hr Payroll Calendar Period Id |InputType.text|REFERENCE|
-|**10**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**10**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**20**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**30**|*hrPayrollCalendarId*|Hr Payroll Calendar Id |defferedSelect|REFERENCE|
+|**30**|*hrPayrollCalendarId*|Hr Payroll Calendar Id |deferredSelect|REFERENCE|
 |**40**|*periodName*|Period Name |InputType.textField|FINANCE|
 |**50**|*periodNumber*|Period Number |InputType.textField|DATA|
 |**60**|*year*|Year |InputType.number|DEFAULT|
 |**70**|*startDate*|Start Date |InputType.date|DATE|
 |**80**|*endDate*|End Date |InputType.date|DATE|
-|**90**|*glPeriodId*|Gl Period Id |defferedSelect|REFERENCE|
+|**90**|*glPeriodId*|Gl Period Id |deferredSelect|REFERENCE|
 |**100**|*adjustmentPeriod*|Adjustment Period |InputType.checkBox|FINANCE|
 |**150**|*periodDescription*|Period Description |InputType.textField|FINANCE|
 |**5110**|*createdBy*|Created By |InputType.text|REFERENCE|
@@ -237,21 +237,21 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvLegalOrgCode*| Legal Org Code |defferedSelect|ENTITY|
+|**10**|*vvLegalOrgCode*| Legal Org Code |deferredSelect|ENTITY|
 |**10**|*hrPayrollPaymentMethodId*|Hr Payroll Payment Method Id |InputType.text|REFERENCE|
 |**20**|*paymentMethod*|Payment Method |InputType.textField|FINANCE|
-|**30**|*legalOrgId*|Legal Org Id |defferedSelect|REFERENCE|
+|**30**|*legalOrgId*|Legal Org Id |deferredSelect|REFERENCE|
 |**40**|*paymentType*|Payment Type |InputType.select|CONTROL|
 |**50**|*startDate*|Start Date |InputType.date|DATE|
 |**60**|*endDate*|End Date |InputType.date|DATE|
 |**70**|*description*|Description |InputType.textField|DEFAULT|
-|**80**|*currency*|Currency |defferedSelect|FINANCE|
+|**80**|*currency*|Currency |deferredSelect|FINANCE|
 |**90**|*bankAccountId*|Bank Account Id |InputType.text|REFERENCE|
-|**100**|*cashAcId*|Cash Ac Id |defferedSelect|REFERENCE|
-|**110**|*clearingAcId*|Clearing Ac Id |defferedSelect|REFERENCE|
-|**120**|*bankChargeAcId*|Bank Charge Ac Id |defferedSelect|REFERENCE|
-|**130**|*salaryPayableAcId*|Salary Payable Ac Id |defferedSelect|REFERENCE|
-|**180**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**100**|*cashAcId*|Cash Ac Id |deferredSelect|REFERENCE|
+|**110**|*clearingAcId*|Clearing Ac Id |deferredSelect|REFERENCE|
+|**120**|*bankChargeAcId*|Bank Charge Ac Id |deferredSelect|REFERENCE|
+|**130**|*salaryPayableAcId*|Salary Payable Ac Id |deferredSelect|REFERENCE|
+|**180**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**190**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5140**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5150**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -330,19 +330,19 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvHrCalendarName*| Hr Calendar Name |defferedSelect|DEFAULT|
-|**10**|*vvHrPaymentMethod*| Hr Payment Method |defferedSelect|FINANCE|
+|**10**|*vvHrCalendarName*| Hr Calendar Name |deferredSelect|DEFAULT|
+|**10**|*vvHrPaymentMethod*| Hr Payment Method |deferredSelect|FINANCE|
 |**20**|*hrPayrollId*|Hr Payroll Id |InputType.text|REFERENCE|
 |**30**|*payrollName*|Payroll Name |InputType.textField|FINANCE|
 |**40**|*payrollCode*|Payroll Code |InputType.textField|FINANCE|
 |**50**|*periodType*|Period Type |InputType.select|CONTROL|
-|**60**|*hrPayrollCalendarId*|Hr Payroll Calendar Id |defferedSelect|REFERENCE|
-|**70**|*hrPayrollPaymentMethodId*|Hr Payroll Payment Method Id |defferedSelect|REFERENCE|
+|**60**|*hrPayrollCalendarId*|Hr Payroll Calendar Id |deferredSelect|REFERENCE|
+|**70**|*hrPayrollPaymentMethodId*|Hr Payroll Payment Method Id |deferredSelect|REFERENCE|
 |**80**|*startDate*|Start Date |InputType.date|DATE|
 |**90**|*endDate*|End Date |InputType.date|DATE|
 |**100**|*description*|Description |InputType.textField|DEFAULT|
-|**150**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |defferedSelect|REFERENCE|
-|**160**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**150**|*glAcProfileHeaderId*|Gl Ac Profile Header Id |deferredSelect|REFERENCE|
+|**160**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**170**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5110**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5120**|*creationDate*|Creation Date |InputType.text|REFERENCE|
@@ -487,25 +487,25 @@ You can configure the application to show which fields should be shown under whi
 |**10**|*payrollCode*|Payroll Code |InputType.textField|FINANCE|
 |**10**|*payrollName*|Payroll Name |InputType.textField|FINANCE|
 |**20**|*periodType*|Period Type |InputType.select|CONTROL|
-|**30**|*hrPayrollPaymentMethodId*|Hr Payroll Payment Method Id |defferedSelect|REFERENCE|
+|**30**|*hrPayrollPaymentMethodId*|Hr Payroll Payment Method Id |deferredSelect|REFERENCE|
 |**40**|*paymentMethod*|Payment Method |InputType.textField|FINANCE|
-|**50**|*legalOrgId*|Legal Org Id |defferedSelect|REFERENCE|
+|**50**|*legalOrgId*|Legal Org Id |deferredSelect|REFERENCE|
 |**60**|*paymentType*|Payment Type |InputType.select|CONTROL|
-|**70**|*currency*|Currency |defferedSelect|FINANCE|
+|**70**|*currency*|Currency |deferredSelect|FINANCE|
 |**80**|*periodName*|Period Name |InputType.textField|FINANCE|
 |**90**|*periodNumber*|Period Number |InputType.textField|DATA|
 |**100**|*year*|Year |InputType.number|DEFAULT|
 |**110**|*startDate*|Start Date |InputType.date|DATE|
 |**120**|*endDate*|End Date |InputType.date|DATE|
 |**130**|*hrPayrollProcessId*|Hr Payroll Process Id |InputType.text|REFERENCE|
-|**140**|*hrPayrollId*|Hr Payroll Id |defferedSelect|REFERENCE|
+|**140**|*hrPayrollId*|Hr Payroll Id |deferredSelect|REFERENCE|
 |**150**|*hrPayrollCalendarPeriodId*|Hr Payroll Calendar Period Id |InputType.text|REFERENCE|
 |**160**|*hrPayrollScheduleId*|Hr Payroll Schedule Id |InputType.text|REFERENCE|
 |**170**|*procesName*|Proces Name |InputType.textField|DEFAULT|
 |**180**|*processStatus*|Process Status |InputType.select|CONTROL|
 |**190**|*glJournalHeaderId*|Gl Journal Header Id |InputType.text|REFERENCE|
 |**200**|*description*|Description |InputType.textField|DEFAULT|
-|**250**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**250**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**260**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
 |**5210**|*createdBy*|Created By |InputType.text|REFERENCE|
 |**5220**|*creationDate*|Creation Date |InputType.text|REFERENCE|

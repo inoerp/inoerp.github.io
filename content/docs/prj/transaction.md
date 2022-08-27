@@ -98,34 +98,34 @@ You can configure the application to show which fields should be shown under whi
 
 | Sequence | Name                  | Label                    | InputType             | Field Group |
 | -------- | -------------------------- | ------------------------ | --------------------- | ----------- |
-|**10**|*vvInvOrgCode*| Inv Org Code |defferedSelect|ENTITY|
-|**10**|*vvResourceName*| Resource Name |defferedSelect|DEFAULT|
-|**20**|*vvUomCode*| Uom Code |defferedSelect|DEFAULT|
-|**30**|*vvResourceDescription*| Resource Description |defferedSelect|DEFAULT|
-|**40**|*vvTrnxProjectName*| Trnx Project Name |defferedSelect|DEFAULT|
-|**50**|*vvTrnxProjectNumber*| Trnx Project Number |defferedSelect|DATA|
-|**60**|*vvTrnxTaskNumber*| Trnx Task Number |defferedSelect|DATA|
-|**70**|*vvTrnxTaskName*| Trnx Task Name |defferedSelect|DEFAULT|
-|**80**|*vvTrnxActivitySequence*| Trnx Activity Sequence |defferedSelect|DEFAULT|
-|**90**|*vvTrnxActivityDescription*| Trnx Activity Description |defferedSelect|DEFAULT|
-|**100**|*vvPrjProjectHeaderId*| Prj Project Header Id |defferedSelect|REFERENCE|
-|**110**|*vvPrjProjectTaskId*| Prj Project Task Id |defferedSelect|REFERENCE|
+|**10**|*vvInvOrgCode*| Inv Org Code |deferredSelect|ENTITY|
+|**10**|*vvResourceName*| Resource Name |deferredSelect|DEFAULT|
+|**20**|*vvUomCode*| Uom Code |deferredSelect|DEFAULT|
+|**30**|*vvResourceDescription*| Resource Description |deferredSelect|DEFAULT|
+|**40**|*vvTrnxProjectName*| Trnx Project Name |deferredSelect|DEFAULT|
+|**50**|*vvTrnxProjectNumber*| Trnx Project Number |deferredSelect|DATA|
+|**60**|*vvTrnxTaskNumber*| Trnx Task Number |deferredSelect|DATA|
+|**70**|*vvTrnxTaskName*| Trnx Task Name |deferredSelect|DEFAULT|
+|**80**|*vvTrnxActivitySequence*| Trnx Activity Sequence |deferredSelect|DEFAULT|
+|**90**|*vvTrnxActivityDescription*| Trnx Activity Description |deferredSelect|DEFAULT|
+|**100**|*vvPrjProjectHeaderId*| Prj Project Header Id |deferredSelect|REFERENCE|
+|**110**|*vvPrjProjectTaskId*| Prj Project Task Id |deferredSelect|REFERENCE|
 |**120**|*vvOperationSequence*| Operation Sequence |InputType.text|DEFAULT|
-|**130**|*vvResOperationSequence*| Res Operation Sequence |defferedSelect|DEFAULT|
-|**140**|*vvMfgResource*| Mfg Resource |defferedSelect|DEFAULT|
+|**130**|*vvResOperationSequence*| Res Operation Sequence |deferredSelect|DEFAULT|
+|**140**|*vvMfgResource*| Mfg Resource |deferredSelect|DEFAULT|
 |**150**|*hrResourceTransactionId*|Hr Resource Transaction Id |InputType.text|REFERENCE|
-|**160**|*srcEntityName*|Src Entity Name |defferedSelect|DEFAULT|
+|**160**|*srcEntityName*|Src Entity Name |deferredSelect|DEFAULT|
 |**170**|*srcEntityId*|Src Entity Id |InputType.text|REFERENCE|
-|**180**|*prjProjectActivityResId*|Prj Project Activity Res Id |defferedSelect|REFERENCE|
+|**180**|*prjProjectActivityResId*|Prj Project Activity Res Id |deferredSelect|REFERENCE|
 |**190**|*wipWoLineResId*|Wip Wo Line Res Id |InputType.text|REFERENCE|
-|**200**|*invOrgId*|Inv Org Id |defferedSelect|REFERENCE|
+|**200**|*invOrgId*|Inv Org Id |deferredSelect|REFERENCE|
 |**210**|*transactionType*|Transaction Type |InputType.select|CONTROL|
 |**220**|*hrResourceId*|Hr Resource Id |InputType.text|REFERENCE|
 |**230**|*transactionDate*|Transaction Date |InputType.date|DATE|
 |**240**|*unitCostPerHour*|Unit Cost Per Hour |InputType.textField|FINANCE|
 |**250**|*noOfHour*|No Of Hour |InputType.textField|DEFAULT|
 |**260**|*unitCostPerQuantity*|Unit Cost Per Quantity |InputType.textField|DATA|
-|**270**|*uomCode*|Uom Code |defferedSelect|DEFAULT|
+|**270**|*uomCode*|Uom Code |deferredSelect|DEFAULT|
 |**280**|*transactionQuantity*|Transaction Quantity |InputType.textField|DATA|
 |**290**|*transactionAmount*|Transaction Amount |InputType.textField|FINANCE|
 |**300**|*reason*|Reason |InputType.text|REFERENCE|
